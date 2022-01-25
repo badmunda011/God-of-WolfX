@@ -5,16 +5,16 @@ import random
 from sys import argv
 from typing import Optional
 
-import mrjoker.modules.sql.users_sql as sql
+import MashaRoBot.modules.sql.users_sql as sql
 
-from mrjoker import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+from MashaRoBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           SUPPORT_CHAT, dispatcher, StartTime, telethn, updater)
 # needed! to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file
-from mrjoker.modules import ALL_MODULES
-from mrjoker.modules.helper_funcs.chat_status import is_user_admin
-from mrjoker.modules.helper_funcs.misc import paginate_modules
+from MashaRoBot.modules import ALL_MODULES
+from MashaRoBot.modules.helper_funcs.chat_status import is_user_admin
+from MashaRoBot.modules.helper_funcs.misc import paginate_modules
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.error import (BadRequest, ChatMigrated, NetworkError,
