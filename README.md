@@ -2,7 +2,7 @@
   <img src="https://telegra.ph/file/66b8758c7a5f91683a8de.jpg">
 </p>
 
-<h4><p align="center"> Hacker own robot </p></h4>
+<h4><p align="center"> God OF Wolf robot </p></h4>
 
 <p align="center">Wolf X Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
 
