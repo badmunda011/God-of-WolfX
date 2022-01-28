@@ -4,9 +4,8 @@ import re
 import random
 from sys import argv
 from typing import Optional
-
 import MashaRoBot.modules.sql.users_sql as sql
-
+import MashaRoBot.modules.sql.users_sql as sql
 from MashaRoBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           SUPPORT_CHAT, dispatcher, StartTime, telethn, updater)
