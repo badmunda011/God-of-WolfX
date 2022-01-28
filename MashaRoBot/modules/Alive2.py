@@ -105,6 +105,6 @@ __mod_name__ = "Aʟɪᴠᴇ🤖"
 
 __help__ = """
  • /alive *:* 👈 do this commend and let see the magic.
-Credits : [𝙷ᴀᴄᴋᴇʀ](https://t.me/HMF_OWNER_1)
+Credits : [✰ ꫝꪖᥴ𝕜ꫀ𝕣 ✰](https://t.me/HMF_OWNER_1)
 """
     
