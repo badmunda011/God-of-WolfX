@@ -101,7 +101,7 @@ async def hmm(yes):
     await asyncio.sleep(edit_time)
     ok7 = await borg.edit_message(yes.chat_id, ok6, file=file4)
 
-__mod_name__ = "Alive🤖"
+__mod_name__ = "Aʟɪᴠᴇ🤖"
 
 __help__ = """
  • /alive *:* 👈 do this commend and let see the magic.
