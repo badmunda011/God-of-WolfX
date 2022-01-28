@@ -104,7 +104,7 @@ async def hmm(yes):
 __mod_name__ = "Alive🤖"
 
 __help__ = """
- ~ .alive *:* Get A Alive Message Like Userbot. 
-Credits @Horimaya
+ • /alive *:* 👈 do this commend and let see the magic.
+Credits : [𝙷ᴀᴄᴋᴇʀ](https://t.me/HMF_OWNER_1)
 """
     
