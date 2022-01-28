@@ -158,7 +158,7 @@ __help__ = """
 
 """
 
-__mod_name__ = "Insults"
+__mod_name__ = "Iɴsᴜʟᴛ😠"
 
 INSULT_HANDLER = DisableAbleCommandHandler("insult", insult)
 
