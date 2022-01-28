@@ -25,9 +25,9 @@ from io import BytesIO
 from datetime import datetime
 import random
 from telethon import events, version
-from mrjoker.events import register
-from mrjoker import telethn as borg
-from mrjoker import StartTime, dispatcher
+from MashaRoBot.events import register
+from MashaRoBot import telethn as borg
+from MashaRoBot import StartTime, dispatcher
 from telethon.tl.types import ChannelParticipantsAdmins
 
 edit_time = 5
