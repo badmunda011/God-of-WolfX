@@ -40,11 +40,6 @@ telegraph>=1.4.1
 heroku3
 spamwatch>=0.3.0
 alphabet_detector
-pybase64
-pySmartDL
-validators
-nekos.py
-aiofiles
 pyrate-limiter
 cachetools
 ujson
