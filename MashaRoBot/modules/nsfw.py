@@ -4,14 +4,14 @@ import nekos
 import requests
 from PIL import Image
 from telegram import ParseMode
-from mrjoker import dispatcher, updater
-import mrjoker.modules.sql.nsfw_sql as sql
-from mrjoker.modules.log_channel import gloggable
+from MashaRoBot import dispatcher, updater
+import MashaRoBot.modules.sql.nsfw_sql as sql
+from MashaRoBot.modules.log_channel import gloggable
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
-from mrjoker.modules.helper_funcs.filters import CustomFilters
-from mrjoker.modules.helper_funcs.chat_status import user_admin
+from MashaRoBot.modules.helper_funcs.filters import CustomFilters
+from MashaRoBot.modules.helper_funcs.chat_status import user_admin
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
 @run_async
