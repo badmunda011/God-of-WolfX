@@ -6,7 +6,7 @@ from pyrogram.types import (
     Message,
 )
 
-from mrjoker.imgedit.edit_1 import (  # pylint:disable=import-error
+from MashaRoBot.imgedit.edit_1 import (  # pylint:disable=import-error
     black_white,
     box_blur,
     bright,
@@ -14,7 +14,7 @@ from mrjoker.imgedit.edit_1 import (  # pylint:disable=import-error
     mix,
     normal_blur,
 )
-from mrjoker.imgedit.edit_2 import (  # pylint:disable=import-error
+from MashaRoBot.imgedit.edit_2 import (  # pylint:disable=import-error
     cartoon,
     circle_with_bg,
     circle_without_bg,
@@ -24,13 +24,13 @@ from mrjoker.imgedit.edit_2 import (  # pylint:disable=import-error
     sepia_mode,
     sticker,
 )
-from mrjoker.imgedit.edit_3 import (  # pylint:disable=import-error
+from MashaRoBot.imgedit.edit_3 import (  # pylint:disable=import-error
     black_border,
     blue_border,
     green_border,
     red_border,
 )
-from mrjoker.imgedit.edit_4 import (  # pylint:disable=import-error
+from MashaRoBot.imgedit.edit_4 import (  # pylint:disable=import-error
     inverted,
     removebg_plain,
     removebg_sticker,
@@ -40,7 +40,7 @@ from mrjoker.imgedit.edit_4 import (  # pylint:disable=import-error
     rotate_270,
     round_sticker,
 )
-from mrjoker.imgedit.edit_5 import (  # pylint:disable=import-error
+from MashaRoBot.imgedit.edit_5 import (  # pylint:disable=import-error
     normalglitch_1,
     normalglitch_2,
     normalglitch_3,
@@ -52,7 +52,7 @@ from mrjoker.imgedit.edit_5 import (  # pylint:disable=import-error
     scanlineglitch_4,
     scanlineglitch_5,
 )
-from mrjoker import pbot as Client
+from MashaRoBot import pbot as Client
 
 lel = 00000000
 # pylint:disable=import-error
