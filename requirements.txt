@@ -69,4 +69,4 @@ img2pdf
 aiofiles
 wget
 pendulum
-
+nekos.py
