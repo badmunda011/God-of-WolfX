@@ -70,3 +70,4 @@ aiofiles
 wget
 pendulum
 nekos.py
+nekos
