@@ -207,6 +207,9 @@ for module_name in ALL_MODULES:
     if hasattr(imported_module, "__import_data__"):
         DATA_IMPORT.append(imported_module)
 
+    if hasattr(imported_module, "__gdpr__"):
+        GDPR.append(imported_module)
+
     if hasattr(imported_module, "__export_data__"):
         DATA_EXPORT.append(imported_module)
 
