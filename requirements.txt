@@ -1,14 +1,10 @@
 ubot
 future
 emoji
-pyYAML>=5.1.2
-tzlocal==2.0
 pykeyboard
 lxml
 wget
-PyDictionary
 gtts
-faker
 beautifulsoup4
 requests==2.20.0
 python-telegram-bot==12.8
@@ -35,7 +31,7 @@ regex
 bleach
 git+https://github.com/MR-JINN-OF-TG/python-markdown2.git
 wikipedia>=1.4.0
-telethon==1.16.4
+telethon
 telegraph>=1.4.1
 heroku3
 spamwatch>=0.3.0
@@ -45,10 +41,9 @@ cachetools
 ujson
 pretty_errors
 TgCrypto
-pyrogram
-youtube-dl
-youtube-search-python
-yt_dlp
+Pyrogram
+
+youtube_search
 asyncio
 dateparser==1.0.0
 pymongo==3.11.0
@@ -59,13 +54,15 @@ emoji-country-flag
 countryinfo
 html2text
 bs4
-fontTools
 bing_image_downloader
 search_engine_parser
 pytz
-lyricsgenius
-tswift
+tzlocal==2.0
+motor
+fontTools
 envparse
+tswift
+#profanity (Credits to Julia)
 better_profanity
 nudepy
 img2pdf
@@ -73,8 +70,3 @@ aiofiles
 wget
 pendulum
 nekos.py
-tzlocal==2.0
-motor
-fontTools
-envparse
-#profanity (Credits to Julia)
