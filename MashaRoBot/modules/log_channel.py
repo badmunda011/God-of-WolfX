@@ -3,7 +3,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from mrjoker.modules.helper_funcs.misc import is_module_loaded
+from MashaRoBot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from mrjoker import EVENT_LOGS, LOGGER, dispatcher
-    from mrjoker.modules.helper_funcs.chat_status import user_admin
-    from mrjoker.modules.sql import log_channel_sql as sql
+    from MashaRoBot import EVENT_LOGS, LOGGER, dispatcher
+    from MashaRoBot.modules.helper_funcs.chat_status import user_admin
+    from MashaRoBot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
 
@@ -197,7 +197,7 @@ Setting the log channel is done by:
 • forwarding the `/setlog` to the group
 """
 
-    __mod_name__ = "Logs📬"
+    __mod_name__ = "Lᴏɢs📬"
 
     LOG_HANDLER = CommandHandler("logchannel", logging)
     SET_LOG_HANDLER = CommandHandler("setlog", setlog)
