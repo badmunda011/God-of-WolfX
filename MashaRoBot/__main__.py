@@ -764,8 +764,20 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Yes I am Back to online!](https://telegra.ph/file/9825bc2819bb7c78abe67.jpg)", parse_mode=ParseMode.MARKDOWN) 
-        except Unauthorized:
+            dispatcher.bot.sendMessage(f"@Stuxnet_1_official", "🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄ Started! Working Fine For Status, Click /start And /help For More Info[.](https://telegra.ph/file/29abe9f8ef27e254dac35.jpg)", parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="Support 🚑",
+                             url=f"https://t.me/Stuxnet_1_official"),
+                       InlineKeyboardButton(
+                             text="Updates 📢",
+                             url="https://t.me/stuxnetBotz")
+                     ] 
+                ]
+            ),
+        ) 
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
         except BadRequest as e:
