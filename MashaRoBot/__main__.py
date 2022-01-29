@@ -724,6 +724,8 @@ def main():
         help_button, pattern=r"help_.*")
 
     settings_handler = CommandHandler("settings", get_settings)
+    about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_")
+    source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
     settings_callback_handler = CallbackQueryHandler(
         settings_button, pattern=r"stngs_")
 
