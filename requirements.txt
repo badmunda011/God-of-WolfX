@@ -70,4 +70,5 @@ aiofiles
 wget
 pendulum
 nekos.py
-imgeditor.py
+imgeditor
+imgedit
