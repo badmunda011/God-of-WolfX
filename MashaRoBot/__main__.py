@@ -137,7 +137,7 @@ HELP_STRINGS = """
     dispatcher.bot.first_name,""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
-RANGER_IMG = (
+WOLF_IMG = (
       "https://telegra.ph/file/9332b113ddb8555bf6ffe.jpg",
       "https://telegra.ph/file/fbc20e462231564a7407f.jpg",
       "https://telegra.ph/file/45df1a2dcf2e385d5cb7b.jpg",
@@ -278,28 +278,28 @@ def start(update: Update, context: CallbackContext):
 
             update.effective_message.reply_photo(
 
-                random.choice(RANGER_IMG),
+                random.choice(WOLF_IMG),
                 PM_START_TEXT.format(
                     
                     sql.num_users(),
                     sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-            )
+                timeout=5,
+             )
     else:
            update.effective_message.reply_video(
-            START_IMG, caption= "<code>I'm awake already!\nHaven't slept since</code>: <code>{}</code>".format(
+            WOLF_IMG, caption= "<code>I'm awake already!\nHaven't slept since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/thanimaisupport")
+                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/Stuxnet_1_official")
                   ],
                   [
-                  InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/thanimaibots")
+                  InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/stuxnetBotz")
                   ]
                 ]
             ),
