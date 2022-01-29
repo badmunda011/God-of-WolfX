@@ -288,19 +288,24 @@ def start(update: Update, context: CallbackContext):
                 timeout=5,
              )
     else:
-           update.effective_message.reply_video(
-            WOLF_IMG, caption= "<code>I'm awake already!\nHaven't slept since</code>: <code>{}</code>".format(
+        first_name = update.effective_user.first_name
+        update.effective_message.reply_photo(
+                random.choice(WOLF_IMG), caption=random.choice(TEXXT).format(
+                first_name,
                 uptime
             ),
-            parse_mode=ParseMode.HTML,
+            
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                  [
-                  InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/Stuxnet_1_official")
-                  ],
-                  [
-                  InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/stuxnetBotz")
-                  ]
+                  [                  
+                       InlineKeyboardButton(
+                             text="👥 Support",
+                             url=f"https://t.me/Stuxnet_1_official"),
+                       InlineKeyboardButton(
+                             text="📢 Updates",
+                             url="https://t.me/stuxnetBotz")
+                     ] 
                 ]
             ),
         )
