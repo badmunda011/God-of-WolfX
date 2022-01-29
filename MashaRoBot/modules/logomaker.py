@@ -11,9 +11,9 @@ from io import BytesIO
 from requests import get
 from telethon.tl.types import InputMessagesFilterPhotos
 
-from mrjoker import OWNER_ID, SUPPORT_CHAT
-from mrjoker.events import register
-from mrjoker import telethn
+from MashaRoBot import OWNER_ID, SUPPORT_CHAT
+from MashaRoBot.events import register
+from MashaRoBot import telethn
 from PIL import Image, ImageDraw, ImageFont
 
 
