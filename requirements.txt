@@ -73,7 +73,6 @@ aiofiles
 wget
 pendulum
 nekos.py
-imgeditor
 imgedit
 tzlocal==2.0
 motor
