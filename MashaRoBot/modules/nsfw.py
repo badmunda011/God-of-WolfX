@@ -1,6 +1,6 @@
 import os
 import html
-import nekos
+import
 import requests
 from PIL import Image
 from telegram import ParseMode
