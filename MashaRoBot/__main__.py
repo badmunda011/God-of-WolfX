@@ -89,7 +89,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="⚡нєℓρ & ϲοммєиτѕ🌟", url="https://t.me/Alexa1Robot?start=help"),
+            text="⚡нєℓρ & ϲοммєиτѕ🌟", url="https://t.me/WolfXRobot?start=help"),
     ],
     [
         InlineKeyboardButton(
