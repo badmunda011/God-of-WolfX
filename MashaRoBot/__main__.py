@@ -83,9 +83,9 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🚨ℓοgѕ🚧", url="https://t.me/stuxnet_logs"),
+            text="🚨ℓοgѕ🚧", url="https://t.me/Cringe_Guys_logs"),
         InlineKeyboardButton(
-            text="🧨ѕυρρ๏яτ🎈", url="https://t.me/Stuxnet_1_official"),
+            text="🧨ѕυρρ๏яτ🎈", url="https://t.me/Cringe_Guys_Botz"),
     ],
     [
         InlineKeyboardButton(
@@ -93,7 +93,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🤖υρ∂ατєѕ🐺", url="https://t.me/stuxnetBotz"),
+            text="🤖υρ∂ατєѕ🐺", url="https://t.me/Cringe_Guys_Bot"),
         InlineKeyboardButton(
             text="🍿мονιєѕ💎", url="https://t.me/joinchat/r9qx47U5xEZjY2E1"),
     ],
