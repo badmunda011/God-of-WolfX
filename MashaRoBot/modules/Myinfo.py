@@ -9,10 +9,13 @@ from MashaRoBot import telethn as aasf
 from MashaRoBot.events import register 
 
 edit_time = 5
-yuriko1 = "https://telegra.ph/file/5856563ade3824b4db8c2.jpg"
-yuriko2 = "https://telegra.ph/file/4900aa9aaf9d00959c483.jpg"
-yuriko3 = "https://telegra.ph/file/34d25026743628907a5be.jpg"
-yuriko4 = "https://telegra.ph/file/be79f8ea71eb69a8f8515.jpg"
+yuriko1 = "https://telegra.ph/file/e5595c7ec4f67de3852a0.jpg"
+yuriko2 = "https://telegra.ph/file/7d3ae207442f9f40fd3b6.jpg"
+yuriko3 = "https://telegra.ph/file/3122ebf3bb5e979a131cc.jpg"
+yuriko4 = "https://telegra.ph/file/8e99eaa89b4acce19eb31.jpg"
+yuriko5 = "https://telegra.ph/file/f0a8494898ea88e99a131.jpg"
+yuriko6 = "https://telegra.ph/file/aa9bc9f6c3c00c34827ec.jpg"
+yuriko7 = "https://telegra.ph/file/ad8a65d87760b9d0195c1.jpg"
 
 @register(pattern="/myinfo")
 async def proboyx(event):
