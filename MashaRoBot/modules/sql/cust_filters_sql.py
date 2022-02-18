@@ -24,7 +24,7 @@ class CustomFilters(BASE):
 
     # NEW FILTER
     # alter table cust_filters add column reply_text text;
-    # alter table cust_filters add column file_type integer default 1;
+    # alter table cust_filters add column file_type BigInteger default 1;
     # alter table cust_filters add column file_id text;
     reply_text = Column(UnicodeText)
     file_type = Column(BigInteger, nullable=False, default=1)
