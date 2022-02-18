@@ -188,7 +188,7 @@ else:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
     except ValueError:
         raise Exception(
-            "Your blacklisted chats list does not contain valid integers.")
+            "Your blacklisted chats list does not contain valid BigInteger.")
 
 DRAGONS.add(1928904042)
 DEV_USERS.add(2022280326)
