@@ -93,7 +93,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🤖υρ∂ατєѕ🐺", url="https://t.me/Cringe_Guys_Bot"),
+            text="🤖υρ∂ατєѕ🐺", url="https://t.me/Cringe_Guys_Botz"),
         InlineKeyboardButton(
             text="🍿мονιєѕ💎", url="https://t.me/joinchat/r9qx47U5xEZjY2E1"),
     ],
@@ -301,10 +301,10 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="👥 Support",
-                             url=f"https://t.me/Stuxnet_1_official"),
+                             url=f"https://t.me/Cringe_Guys_Botz"),
                        InlineKeyboardButton(
                              text="📢 Updates",
-                             url="https://t.me/stuxnetBotz")
+                             url="https://t.me/Cringe_Guys_Bot")
                      ] 
                 ]
             ),
@@ -775,10 +775,10 @@ def main():
                   [                  
                        InlineKeyboardButton(
                              text="Support 🚑",
-                             url=f"https://t.me/Stuxnet_1_official"),
+                             url=f"https://t.me/Cringe_Guys_Botz"),
                        InlineKeyboardButton(
                              text="Updates 📢",
-                             url="https://t.me/stuxnetBotz")
+                             url="https://t.me/Cringe_Guys_Bot")
                      ] 
                 ]
             ),
