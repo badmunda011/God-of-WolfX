@@ -14,12 +14,11 @@ BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton("Gɪᴛʜᴜʙ", url=f"https://github.com/Thiruselvan999"),
       ],[
         InlineKeyboardButton("ᴏᴡɴᴇʀ ❣️", url="https://t.me/HMF_Owner_1"),
-        InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/Stuxnet_1_official"),
-       InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/stuxnetBotz"),
+        InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/Cringe_Guys_Botz"),
+       InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Cringe_Guys_Botz"),
       ],[
-        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url="https://t.me/THANIMAIBOTS"),
-        InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/AASFCYBERKING"),
-       InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/Awesome_Prince"),
+        InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url="https://t.me/Cringe_Guys_Bot"),
+        InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/AASF_CYBERKING"),
       ]]
     )
   
