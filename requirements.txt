@@ -71,3 +71,4 @@ wget
 pendulum
 nekos.py
 nltk.txt
+opencv-python-headless
