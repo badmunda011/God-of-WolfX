@@ -1,5 +1,4 @@
 import os
-import cv2
 from PIL import Image
 from MashaRoBot.events import register
 from MashaRoBot import telethn as tbot
