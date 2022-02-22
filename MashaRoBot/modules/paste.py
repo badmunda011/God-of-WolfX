@@ -1,43 +1,12 @@
-"""
-MIT License
-
-Copyright (C) 2017-2019, Paul Larsen
-Copyright (C) 2021 Awesome-RJ
-Copyright (c) 2021, Wolf X • Black Knights Union, <https://github.com/Thiruselvan999/God-of_Wolf-X>
-
-This file is part of @WolfXRobot (Telegram Bot)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
-
 import asyncio
 import os
 import re
 
 import aiofiles
-from pykeyboard import InlineKeyboard
 from pyrogram import filters
-from pyrogram.types import InlineKeyboardButton
+from MashaRoBot.utils.paste import paste
+from MashaRoBot import pbot as app
 
-from MashaRoBot import pgram, aiohttpsession
-from MashaRoBot.utils.errors import capture_err
-from MashaRoBot.utils.pastebin import paste
 
 pattern = re.compile(
     r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$"
