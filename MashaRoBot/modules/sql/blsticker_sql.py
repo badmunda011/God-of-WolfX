@@ -1,6 +1,6 @@
 import threading
 
-from MashaRoBot.modules.sql import BASE, SESSION
+from WolfXRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, BigInteger, String, UnicodeText, distinct, func
 
 
