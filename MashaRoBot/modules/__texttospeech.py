@@ -1,4 +1,4 @@
-from MashaRoBot import telethn as tbot
+from WolfXRobot import telethn as tbot
 import os
 
 from gtts import gTTS
@@ -8,9 +8,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from MashaRoBot import *
+from WolfXRobot import *
 
-from MashaRoBot.events import register
+from WolfXRobot.events import register
 
 
 async def is_register_admin(chat, user):
