@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, BigInteger, distinct, func
 
-from MashaRoBot.modules.helper_funcs.msg_types import Types
-from MashaRoBot.modules.sql import BASE, SESSION
+from WolfXRobot.modules.helper_funcs.msg_types import Types
+from WolfXRobot.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
