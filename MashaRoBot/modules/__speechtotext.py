@@ -1,4 +1,4 @@
-from MashaRoBot import telethn as tbot
+from WolfXRobot import telethn as tbot
 import os
 import urllib.request
 from datetime import datetime
@@ -11,8 +11,8 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from MashaRoBot import *
-from MashaRoBot.events import register
+from WolfXRobot import *
+from WolfXRobot.events import register
 
 
 async def is_register_admin(chat, user):
@@ -107,4 +107,4 @@ sm,sn,so,sq,sr,st,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,
 vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
 """
 
-__mod_name__ = "ᴛᴛs/sᴛᴛ🕵️"
+__mod_name__ = "Tᴛs/Sᴛᴛ🕵️"
