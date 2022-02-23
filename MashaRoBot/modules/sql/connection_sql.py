@@ -4,7 +4,7 @@ from typing import Union
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, BigInteger
 
-from MashaRoBot.modules.sql import SESSION, BASE
+from WolfXRobot.modules.sql import SESSION, BASE
 
 
 class ChatAccessConnectionSettings(BASE):
