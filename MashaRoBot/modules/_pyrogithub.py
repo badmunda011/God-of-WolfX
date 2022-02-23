@@ -1,11 +1,11 @@
-# © @Mr_Dark_Prince
+# © @HMF_Owner_1
 import aiohttp
 from pyrogram import filters
-from MashaRoBot import pbot
-from MashaRoBot.pyrogramee.errors import capture_err
+from WolfXRobot import pbot
+from WolfXRobot.pyrogramee.errors import capture_err
 
 
-__mod_name__ = "ɢɪᴛʜᴜʙ📡"
+__mod_name__ = "Gɪᴛʜᴜʙ📡"
 
 __help__ = """
 I will give information about github profile 
