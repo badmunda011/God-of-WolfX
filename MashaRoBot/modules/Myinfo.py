@@ -3,10 +3,10 @@ from telethon import custom, events, Button
 import os,re
 import asyncio
 
-from MashaRoBot import telethn as bot
-from MashaRoBot import telethn as tgbot
-from MashaRoBot import telethn as aasf
-from MashaRoBot.events import register 
+from WolfXRobot import telethn as bot
+from WolfXRobot import telethn as tgbot
+from WolfXRobot import telethn as aasf
+from WolfXRobot.events import register 
 
 edit_time = 5
 yuriko1 = "https://telegra.ph/file/e5595c7ec4f67de3852a0.jpg"
