@@ -1,12 +1,12 @@
 import os
 
-from MashaRoBot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
-from telethon.tl.types import ChatBannedRights
+from WolfXRobot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from WolfXRobot.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from MashaRoBot.events import register
-from MashaRoBot import OWNER_ID
-from MashaRoBot import telethn as tbot
+from WolfXRobot.events import register
+from WolfXRobot import OWNER_ID
+from WolfXRobot import telethn as tbot
 from telethon import *
 from telethon import Button, custom, events
 
@@ -174,7 +174,7 @@ __help__ = f"""
 and Automatically openned at 6am(IST) To Prevent Night Spams.
 """
 
-__mod_name__ = "ɴ-ᴍᴏᴅᴇ😴"
+__mod_name__ = "N-ᴍᴏᴅᴇ😴"
 
 
             
