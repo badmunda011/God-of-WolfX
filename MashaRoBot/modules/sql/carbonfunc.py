@@ -1,4 +1,4 @@
-import codecs #vegetaRobot
+import codecs #WolfXRobot
 import pickle
 from asyncio import gather, get_running_loop
 from io import BytesIO
@@ -7,7 +7,7 @@ from random import randint
 from re import findall
 from time import time
 from datetime import timedelta, datetime
-from MashaRoBot import aiohttpsession as aiosession
+from WolfXRobot import aiohttpsession as aiosession
 import aiofiles
 import aiohttp
 import speedtest
