@@ -71,8 +71,5 @@ wget
 pendulum
 nekos.py
 opencv-python-headless
-better_profanity
-textblob 
-nudepy
-nekos.py
+
 
