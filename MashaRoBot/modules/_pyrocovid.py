@@ -1,7 +1,7 @@
-from MashaRoBot import pbot as app
-from MashaRoBot.pyrogramee.errors import capture_err
-from MashaRoBot.pyrogramee.json_prettify import json_prettify
-from MashaRoBot.pyrogramee.fetch import fetch
+from WolfXRobot import pbot as app
+from WolfXRobot.pyrogramee.errors import capture_err
+from WolfXRobot.pyrogramee.json_prettify import json_prettify
+from WolfXRobot.pyrogramee.fetch import fetch
 from pyrogram import filters
 
 
