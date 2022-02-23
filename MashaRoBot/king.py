@@ -1,6 +1,6 @@
 import logging
 from pyrogram import Client
-from MashaRoBot.conf import get_int_key, get_str_key
+from WolfXRobot.conf import get_int_key, get_str_key
 
 TOKEN = get_str_key("TOKEN", required=True)
 API_ID = get_int_key("API_ID", required=True)
