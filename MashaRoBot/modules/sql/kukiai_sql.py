@@ -1,7 +1,7 @@
 import threading
 
 from sqlalchemy import Column, String
-from MashaRoBot.modules.sql import BASE, SESSION
+from WolfXRobot.modules.sql import BASE, SESSION
 
 class KukiChats(BASE):
     __tablename__ = "kuki_chats"
