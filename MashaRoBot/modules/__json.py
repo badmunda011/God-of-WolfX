@@ -1,7 +1,7 @@
 import io
-from MashaRoBot.events import register
-from MashaRoBot import telethn as borg
-from MashaRoBot import telethn as tbot
+from WolfXRobot.events import register
+from WolfXRobot import telethn as borg
+from WolfXRobot import telethn as tbot
 from telethon import types
 from telethon import events
 from telethon.tl import functions, types
@@ -57,4 +57,4 @@ __help__ = """
  ❍ /json*:* Get Detailed info about any message
 """
 
-__mod_name__ = "Jsᴏɴ📤"
+__mod_name__ = "Jsᴏɴ📰"
