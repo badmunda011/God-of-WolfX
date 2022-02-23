@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/3e7539d3efb04d538d5d0.jpg">
+  <img src="https://telegra.ph/file/c429dbc3076affd9011a2.jpg">
 </p>
 
 <h4><p align="center"> God OF Wolf robot </p></h4>
