@@ -1,5 +1,5 @@
 from sqlalchemy import Boolean, Column, BigInteger, String, UnicodeText
-from MashaRoBot.modules.sql import BASE, SESSION
+from WolfXRobot.modules.sql import BASE, SESSION
 
 
 class Nsfwatch(BASE):
