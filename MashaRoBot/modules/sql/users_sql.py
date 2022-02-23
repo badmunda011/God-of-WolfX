@@ -1,7 +1,7 @@
 import threading
 
-from MashaRoBot import dispatcher
-from MashaRoBot.modules.sql import BASE, SESSION
+from WolfXRobot import dispatcher
+from WolfXRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
