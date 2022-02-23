@@ -4,17 +4,17 @@ import re
 import random
 from sys import argv
 from typing import Optional
-import MashaRoBot.modules.sql.users_sql as sql
-import MashaRoBot.modules.sql.users_sql as sql
-from MashaRoBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+import WolfXRobot.modules.sql.users_sql as sql
+import WolfXRobot.modules.sql.users_sql as sql
+from WolfXRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           SUPPORT_CHAT, dispatcher, StartTime, telethn, updater, pbot)
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from MashaRoBot.modules import ALL_MODULES
-from MashaRoBot.modules.helper_funcs.chat_status import is_user_admin
-from MashaRoBot.modules.helper_funcs.misc import paginate_modules
+from WolfXRobot.modules import ALL_MODULES
+from WolfXRobot.modules.helper_funcs.chat_status import is_user_admin
+from WolfXRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -182,7 +182,7 @@ GDPR = []
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("MashaRoBot.modules." + module_name)
+    imported_module = importlib.import_module("WolfXRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -447,7 +447,7 @@ def Masha_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_Masha's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/Mr-Dark-Prince/MashaRoBot).
+                 \nHere is the [💾Repository](https://github.com/Mr-Dark-Prince/WolfXRobot).
                  \n\nIf you have any question about Masha, let us know at @WasteBots.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -474,8 +474,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Lonely king*
-                 \nMy source code is private  [support](t.me/thanimaisupport) .""",
+            text=""" Hi..🤗 I'm *Hacker*
+                 \nMy source code is private  [support](t.me/Cringe_Guys_botz) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
