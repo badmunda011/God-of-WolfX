@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from MashaRoBot.modules.helper_funcs.msg_types import Types
-from MashaRoBot.modules.sql import BASE, SESSION
+from WolfXRobot.modules.helper_funcs.msg_types import Types
+from WolfXRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText
 
 DEFAULT_WELCOME = 'ஏய் {first}, நீங்கள் எப்படி இருக்கிறீர்கள்?'
