@@ -1,6 +1,6 @@
 from envparse import env
 
-from MashaRoBot import LOGGER
+from WolfXRobot import LOGGER
 
 DEFAULTS = {
 
