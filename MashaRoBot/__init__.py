@@ -121,7 +121,7 @@ if ENV:
             "Your blacklisted chats list does not contain valid BigInteger.")
 
 else:
-    from MashaRoBot.config import Development as Config
+    from WolfXRobot.config import Development as Config
     TOKEN = Config.TOKEN
 
     try:
@@ -234,7 +234,7 @@ TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
 
-from MashaRoBot.modules.helper_funcs.handlers import (
+from WolfXRobot.modules.helper_funcs.handlers import (
 
     CustomCommandHandler,
 
