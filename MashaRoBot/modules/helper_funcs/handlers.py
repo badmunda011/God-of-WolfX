@@ -1,6 +1,6 @@
-import MashaRoBot.modules.sql.blacklistusers_sql as sql
-from MashaRoBot import ALLOW_EXCL
-from MashaRoBot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import WolfXRobot.modules.sql.blacklistusers_sql as sql
+from WolfXRobot import ALLOW_EXCL
+from WolfXRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
