@@ -1,12 +1,12 @@
 import random, html
 
-from MashaRoBot import dispatcher
-from MashaRoBot.modules.disable import (
+from WolfXRobot import dispatcher
+from WolfXRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from MashaRoBot.modules.sql import afk_sql as sql
-from MashaRoBot.modules.users import get_user_id
+from WolfXRobot.modules.sql import afk_sql as sql
+from WolfXRobot.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
