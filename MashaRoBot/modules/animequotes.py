@@ -7,10 +7,10 @@ from telegram.ext import CallbackContext, run_async
 from telegram.error import BadRequest
 
 import MashaRoBot.modules.animequotes_strings as animequotes_strings
-from MashaRoBot import dispatcher
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.helper_funcs.chat_status import (is_user_admin)
-from MashaRoBot.modules.helper_funcs.extraction import extract_user
+from WolfXRobot import dispatcher
+from WolfXRobot.modules.disable import DisableAbleCommandHandler
+from WolfXRobot.modules.helper_funcs.chat_status import (is_user_admin)
+from WolfXRobot.modules.helper_funcs.extraction import extract_user
 
 @run_async
 def fun(update: Update, context: CallbackContext):
