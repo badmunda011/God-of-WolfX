@@ -3,7 +3,7 @@ import json
 import os
 from typing import Optional
 
-from MashaRoBot import (
+from WolfXRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -13,13 +13,13 @@ from MashaRoBot import (
     WOLVES,
     dispatcher,
 )
-from MashaRoBot.modules.helper_funcs.chat_status import (
+from WolfXRobot.modules.helper_funcs.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from MashaRoBot.modules.helper_funcs.extraction import extract_user
-from MashaRoBot.modules.log_channel import gloggable
+from WolfXRobot.modules.helper_funcs.extraction import extract_user
+from WolfXRobot.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
@@ -678,7 +678,7 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
-__mod_name__ = "ᴅᴇᴠ🦁"
+__mod_name__ = "Dᴇᴠ🦁"
 __handlers__ = [
     SUDO_HANDLER,
     SUPPORT_HANDLER,
