@@ -6,7 +6,7 @@ from telegram import ParseMode, Update, ChatPermissions
 from telegram.ext import CallbackContext, run_async
 from telegram.error import BadRequest
 
-import MashaRoBot.modules.animequotes_strings as animequotes_strings
+import WolfXRobot.modules.animequotes_strings as animequotes_strings
 from WolfXRobot import dispatcher
 from WolfXRobot.modules.disable import DisableAbleCommandHandler
 from WolfXRobot.modules.helper_funcs.chat_status import (is_user_admin)
