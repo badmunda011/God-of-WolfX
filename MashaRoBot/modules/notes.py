@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import MashaRoBot.modules.sql.notes_sql as sql
-from MashaRoBot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from MashaRoBot.modules.helper_funcs.chat_status import user_admin, connection_status
-from MashaRoBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from MashaRoBot.modules.helper_funcs.msg_types import get_note_type
-from MashaRoBot.modules.helper_funcs.string_handling import (
+import WolfXRobot.modules.sql.notes_sql as sql
+from WolfXRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from WolfXRobot.modules.disable import DisableAbleCommandHandler
+from WolfXRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from WolfXRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from WolfXRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from WolfXRobot.modules.helper_funcs.msg_types import get_note_type
+from WolfXRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
@@ -542,7 +542,7 @@ A button can be added to a note by using standard markdown link syntax - the lin
 
 """
 
-__mod_name__ = "ɴᴏᴛᴇs📜"
+__mod_name__ = "Nᴏᴛᴇs📜"
 
 GET_HANDLER = CommandHandler("get", cmd_get)
 HASH_GET_HANDLER = MessageHandler(Filters.regex(r"^#[^\s]+"), hash_get)
