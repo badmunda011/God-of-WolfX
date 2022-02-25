@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import MashaRoBot
+import WolfXRobot
 
-from MashaRoBot import dispatcher
-from MashaRoBot.modules.helper_funcs.chat_status import dev_plus
+from WolfXRobot import dispatcher
+from WolfXRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -90,5 +90,5 @@ dispatcher.add_handler(LEAVE_HANDLER)
 dispatcher.add_handler(GITPULL_HANDLER)
 dispatcher.add_handler(RESTART_HANDLER)
 
-__mod_name__ = "ᴅᴇᴠ👑"
+__mod_name__ = "Dᴇᴠ👑"
 __handlers__ = [LEAVE_HANDLER, GITPULL_HANDLER, RESTART_HANDLER, ALLOWGROUPS_HANDLER]
