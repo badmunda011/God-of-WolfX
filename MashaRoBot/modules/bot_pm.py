@@ -5,8 +5,8 @@ from pyrogram import (
 from pyrogram.types import (
     Message
 )
-from MashaRoBot import pbot as bot
-from MashaRoBot import OWNER_ID
+from WolfXRobot import pbot as bot
+from WolfXRobot import OWNER_ID
 
 @bot.on_message(
     filters.private
