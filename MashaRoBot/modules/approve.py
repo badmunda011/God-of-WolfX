@@ -5,12 +5,12 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import MashaRoBot.modules.sql.approve_sql as sql
-from MashaRoBot import DRAGONS, dispatcher
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.helper_funcs.chat_status import user_admin
-from MashaRoBot.modules.helper_funcs.extraction import extract_user
-from MashaRoBot.modules.log_channel import loggable
+import WolfXRobot.modules.sql.approve_sql as sql
+from WolfXRobot import DRAGONS, dispatcher
+from WolfXRobot.modules.disable import DisableAbleCommandHandler
+from WolfXRobot.modules.helper_funcs.chat_status import user_admin
+from WolfXRobot.modules.helper_funcs.extraction import extract_user
+from WolfXRobot.modules.log_channel import loggable
 
 
 @loggable
@@ -225,6 +225,6 @@ dispatcher.add_handler(APPROVAL)
 dispatcher.add_handler(UNAPPROVEALL)
 dispatcher.add_handler(UNAPPROVEALL_BTN)
 
-__mod_name__ = "ᴀᴘᴘʀᴏᴠᴇ✅"
+__mod_name__ = "Aᴘᴘʀᴏᴠᴇ✅"
 __command_list__ = ["approve", "unapprove", "approved", "approval"]
 __handlers__ = [APPROVE, DISAPPROVE, APPROVED, APPROVAL]
