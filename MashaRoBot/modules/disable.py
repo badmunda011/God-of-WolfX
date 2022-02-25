@@ -2,9 +2,9 @@ import importlib
 from typing import Union
 
 from future.utils import string_types
-from MashaRoBot import dispatcher
-from MashaRoBot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from MashaRoBot.modules.helper_funcs.misc import is_module_loaded
+from WolfXRobot import dispatcher
+from WolfXRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from WolfXRobot.modules.helper_funcs.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
@@ -348,7 +348,7 @@ if is_module_loaded(FILENAME):
     ❍ /listcmds*:* list all possible toggleable commands
     """
 
-    __mod_name__ = "ᴅɪsᴀʙʟᴇ👎"
+    __mod_name__ = "Dɪsᴀʙʟᴇ👎"
 
 else:
     DisableAbleCommandHandler = CommandHandler
