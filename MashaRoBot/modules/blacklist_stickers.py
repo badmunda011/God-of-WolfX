@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import MashaRoBot.modules.sql.blsticker_sql as sql
-from MashaRoBot import LOGGER, dispatcher
-from MashaRoBot.modules.connection import connected
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.helper_funcs.alternate import send_message
-from MashaRoBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from MashaRoBot.modules.helper_funcs.misc import split_message
-from MashaRoBot.modules.helper_funcs.string_handling import extract_time
+import WolfXRobot.modules.sql.blsticker_sql as sql
+from WolfXRobot import LOGGER, dispatcher
+from WolfXRobot.modules.connection import connected
+from WolfXRobot.modules.disable import DisableAbleCommandHandler
+from WolfXRobot.modules.helper_funcs.alternate import send_message
+from WolfXRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from WolfXRobot.modules.helper_funcs.misc import split_message
+from WolfXRobot.modules.helper_funcs.string_handling import extract_time
 
-from MashaRoBot.modules.log_channel import loggable
-from MashaRoBot.modules.warns import warn
+from WolfXRobot.modules.log_channel import loggable
+from WolfXRobot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
@@ -507,7 +507,7 @@ Note:
  ❍ <sticker link> can be `https://t.me/addstickers/<sticker>` or just `<sticker>` or reply to the sticker message
 """
 
-__mod_name__ = "ʙ-Sᴛɪᴄᴋ🚫"
+__mod_name__ = "B-Sᴛɪᴄᴋ🚫"
 
 BLACKLIST_STICKER_HANDLER = DisableAbleCommandHandler(
     "blsticker", blackliststicker, admin_ok=True
