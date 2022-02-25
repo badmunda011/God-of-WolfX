@@ -7,10 +7,10 @@ from telegram.ext import Filters, CommandHandler
 from telegram.ext.dispatcher import run_async, CallbackContext
 
 import random
-import MashaRoBot.modules.sql.users_sql as sql
-from MashaRoBot.modules.helper_funcs.filters import CustomFilters
-from MashaRoBot import dispatcher, OWNER_ID, LOGGER
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
+import WolfXRobot.modules.sql.users_sql as sql
+from WolfXRobot.modules.helper_funcs.filters import CustomFilters
+from WolfXRobot import dispatcher, OWNER_ID, LOGGER
+from WolfXRobot.modules.disable import DisableAbleCommandHandler
 USERS_GROUP = 4
 
 @run_async
