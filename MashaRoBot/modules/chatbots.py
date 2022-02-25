@@ -4,4 +4,4 @@ __help__= f"""
 *Powered by* : [Kuki Chatbot](https://github.com/MoeZilla/KukiChatbot)
 """
 
-__mod_name__ = "ᴄʜᴀᴛʙᴏᴛ🤓"
+__mod_name__ = "Cʜᴀᴛʙᴏᴛ🤖"
