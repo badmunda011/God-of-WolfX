@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import MashaRoBot.modules.sql.notes_sql as sql
-from MashaRoBot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from MashaRoBot.__main__ import DATA_IMPORT
-from MashaRoBot.modules.helper_funcs.chat_status import user_admin
-from MashaRoBot.modules.helper_funcs.alternate import typing_action
+import WolfXRobot.modules.sql.notes_sql as sql
+from WolfXRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from WolfXRobot.__main__ import DATA_IMPORT
+from WolfXRobot.modules.helper_funcs.chat_status import user_admin
+from WolfXRobot.modules.helper_funcs.alternate import typing_action
 
-# from MashaRoBot.modules.rules import get_rules
-import MashaRoBot.modules.sql.rules_sql as rulessql
+# from WolfXRobot.modules.rules import get_rules
+import WolfXRobot.modules.sql.rules_sql as rulessql
 
-# from MashaRoBot.modules.sql import warns_sql as warnssql
-import MashaRoBot.modules.sql.blacklist_sql as blacklistsql
-from MashaRoBot.modules.sql import disable_sql as disabledsql
+# from WolfXRobot.modules.sql import warns_sql as warnssql
+import WolfXRobot.modules.sql.blacklist_sql as blacklistsql
+from WolfXRobot.modules.sql import disable_sql as disabledsql
 
-# from MashaRoBot.modules.sql import cust_filters_sql as filtersql
-# import MashaRoBot.modules.sql.welcome_sql as welcsql
-import MashaRoBot.modules.sql.locks_sql as locksql
-from MashaRoBot.modules.connection import connected
+# from WolfXRobot.modules.sql import cust_filters_sql as filtersql
+# import WolfXRobot.modules.sql.welcome_sql as welcsql
+import WolfXRobot.modules.sql.locks_sql as locksql
+from WolfXRobot.modules.connection import connected
 
 
 @run_async
@@ -367,7 +367,7 @@ def get_chat(chat_id, chat_data):
         return {"status": False, "value": False}
 
 
-__mod_name__ = "ʙᴀᴄᴋᴜᴘ🎒"
+__mod_name__ = "Bᴀᴄᴋᴜᴘ🎒"
 
 __help__ = """
 *Only for group owner:*
