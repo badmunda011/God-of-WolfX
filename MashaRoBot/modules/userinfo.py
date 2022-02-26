@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from MashaRoBot import (
+from WolfXRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from MashaRoBot import (
     dispatcher,
     sw,
 )
-from MashaRoBot.__main__ import STATS, TOKEN, USER_INFO
-import MashaRoBot.modules.sql.userinfo_sql as sql
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.sql.global_bans_sql import is_user_gbanned
-from MashaRoBot.modules.sql.afk_sql import is_afk, check_afk_status
-from MashaRoBot.modules.sql.users_sql import get_user_num_chats
-from MashaRoBot.modules.helper_funcs.chat_status import sudo_plus
-from MashaRoBot.modules.helper_funcs.extraction import extract_user
-from MashaRoBot import telethn as MashaTelethonClient, TIGERS, DRAGONS, DEMONS
+from WolfXRobot.__main__ import STATS, TOKEN, USER_INFO
+import WolfXRobot.modules.sql.userinfo_sql as sql
+from WolfXRobot.modules.disable import DisableAbleCommandHandler
+from WolfXRobot.modules.sql.global_bans_sql import is_user_gbanned
+from WolfXRobot.modules.sql.afk_sql import is_afk, check_afk_status
+from WolfXRobot.modules.sql.users_sql import get_user_num_chats
+from WolfXRobot.modules.helper_funcs.chat_status import sudo_plus
+from WolfXRobot.modules.helper_funcs.extraction import extract_user
+from WolfXRobot import telethn as MashaTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -567,7 +567,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "ɪɴғᴏ👥"
+__mod_name__ = "Iɴғᴏ👥"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
