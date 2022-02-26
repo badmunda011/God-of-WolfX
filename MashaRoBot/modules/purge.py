@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from MashaRoBot import telethn
-from MashaRoBot.modules.helper_funcs.telethn.chatstatus import (
+from WolfXRobot import telethn
+from WolfXRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
@@ -81,6 +81,6 @@ DEL_HANDLER = delete_messages, events.NewMessage(pattern="^[!/]del$")
 telethn.add_event_handler(*PURGE_HANDLER)
 telethn.add_event_handler(*DEL_HANDLER)
 
-__mod_name__ = "ᴅᴇʟᴇᴛᴇ🗑️"
+__mod_name__ = "Dᴇʟᴇᴛᴇ🗑️"
 __command_list__ = ["del", "purge"]
 __handlers__ = [PURGE_HANDLER, DEL_HANDLER]
