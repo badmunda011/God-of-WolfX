@@ -1,8 +1,8 @@
-# made by @ctzfamily © @pegasusXteam - © @VegetaRobot
+# made by @HMF_Owner_1 © @Cringe_guys_botz - ©WolfXRobot
 
-from MashaRoBot import dispatcher
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.helper_funcs.alternate import typing_action
+from WolfXRobot import dispatcher
+from WolfXRobot.modules.disable import DisableAbleCommandHandler
+from WolfXRobot.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
