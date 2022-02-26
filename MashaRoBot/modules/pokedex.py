@@ -1,7 +1,7 @@
-# © @VegetaRobot by @ctzfamily
+# © @WolfXRobot by @HMF_Owner_1
 import aiohttp
 from pyrogram import filters
-from MashaRoBot import pbot as asuna
+from WolfXRobot import pbot as asuna
 
 @asuna.on_message(filters.command('pokedex'))
 async def PokeDex(_, message):
@@ -43,7 +43,7 @@ Description: {description}"""
     await message.reply_photo(photo=poke_img, caption=caption)
 
 
-__mod_name__ = "ᴘᴏᴋᴇᴅᴇx🔵"
+__mod_name__ = "Pᴏᴋᴇᴅᴇx🔵"
 
 __help__ = """
 /pokedex Pokemon Name 📛
