@@ -1,7 +1,7 @@
 import os
 
 from WolfXRobot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
-from WolfXRobot.tl.types import ChatBannedRights
+from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
 from WolfXRobot.events import register
