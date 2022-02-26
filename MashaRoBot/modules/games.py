@@ -1,6 +1,6 @@
 from telethon.tl.types import InputMediaDice
 
-from MashaRoBot.events import register
+from WolfXRobot.events import register
 
 
 @register(pattern="^/dice(?: |$)(.*)")
@@ -72,4 +72,4 @@ __help__ = """
  Usage: hahaha just a magic.
  warning: you would be in trouble if you input any other value than mentioned.
 """
-__mod_name__ = "ɢᴀᴍᴇs🎲"
+__mod_name__ = "Gᴀᴍᴇs🎲"
