@@ -1,12 +1,12 @@
 from random import randint
 
 import requests as r
-from MashaRoBot import SUPPORT_CHAT, WALL_API, dispatcher
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
+from WolfXRobot import SUPPORT_CHAT, WALL_API, dispatcher
+from WolfXRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
-# Wallpapers module by @TheRealPhoenix using wall.alphacoders.com
+# Wallpapers module by @HMF_Owner_1 using wall.alphacoders.com
 
 
 @run_async
