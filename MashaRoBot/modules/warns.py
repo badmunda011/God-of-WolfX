@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from MashaRoBot import TIGERS, WOLVES, dispatcher
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
-from MashaRoBot.modules.helper_funcs.chat_status import (
+from WolfXRobot import TIGERS, WOLVES, dispatcher
+from WolfXRobot.modules.disable import DisableAbleCommandHandler
+from WolfXRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -14,16 +14,16 @@ from MashaRoBot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from MashaRoBot.modules.helper_funcs.extraction import (
+from WolfXRobot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from MashaRoBot.modules.helper_funcs.filters import CustomFilters
-from MashaRoBot.modules.helper_funcs.misc import split_message
-from MashaRoBot.modules.helper_funcs.string_handling import split_quotes
-from MashaRoBot.modules.log_channel import loggable
-from MashaRoBot.modules.sql import warns_sql as sql
+from WolfXRobot.modules.helper_funcs.filters import CustomFilters
+from WolfXRobot.modules.helper_funcs.misc import split_message
+from WolfXRobot.modules.helper_funcs.string_handling import split_quotes
+from WolfXRobot.modules.log_channel import loggable
+from WolfXRobot.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
