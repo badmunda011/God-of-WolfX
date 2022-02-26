@@ -1,7 +1,7 @@
 import os
 from PIL import Image
-from MashaRoBot.events import register
-from MashaRoBot import telethn as tbot
+from WolfXRobot.events import register
+from WolfXRobot import telethn as tbot
 
 
 @register(pattern="^/tiny ?(.*)")
