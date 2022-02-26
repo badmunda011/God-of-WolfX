@@ -4,9 +4,9 @@ from telegram.ext import run_async, Filters
 
 from telegram import Message, Chat, Update, Bot, MessageEntity
 
-from MashaRoBot import dispatcher
+from WolfXRobot import dispatcher
 
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
+from WolfXRobot.modules.disable import DisableAbleCommandHandler
 
 SFW_STRINGS = (
 
