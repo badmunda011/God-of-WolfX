@@ -14,17 +14,17 @@ from tswift import Song
 
 from telegram.error import BadRequest
 
-import MashaRoBot.modules.fun_strings as fun_strings
+import WolfXRobot.modules.fun_strings as fun_strings
 
-from MashaRoBot import dispatcher
+from WolfXRobot import dispatcher
 
-from MashaRoBot.modules.disable import DisableAbleCommandHandler
+from WolfXRobot.modules.disable import DisableAbleCommandHandler
 
-from MashaRoBot.modules.helper_funcs.alternate import send_message, typing_action
+from WolfXRobot.modules.helper_funcs.alternate import send_message, typing_action
 
-from MashaRoBot.modules.helper_funcs.chat_status import (is_user_admin)
+from WolfXRobot.modules.helper_funcs.chat_status import (is_user_admin)
 
-from MashaRoBot.modules.helper_funcs.extraction import extract_user
+from WolfXRobot.modules.helper_funcs.extraction import extract_user
 
 GIF_ID = 'CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE'
 
