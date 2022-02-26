@@ -1,9 +1,9 @@
 import html
 
-from MashaRoBot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from MashaRoBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from MashaRoBot.modules.log_channel import loggable
-from MashaRoBot.modules.sql import reporting_sql as sql
+from WolfXRobot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from WolfXRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from WolfXRobot.modules.log_channel import loggable
+from WolfXRobot.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
@@ -285,7 +285,7 @@ dispatcher.add_handler(SETTING_HANDLER)
 dispatcher.add_handler(REPORT_HANDLER, REPORT_GROUP)
 dispatcher.add_handler(ADMIN_REPORT_HANDLER, REPORT_GROUP)
 
-__mod_name__ = "ʀᴇᴘᴏʀᴛ✍️"
+__mod_name__ = "Rᴇᴘᴏʀᴛ✍️"
 __handlers__ = [
     (REPORT_HANDLER, REPORT_GROUP),
     (ADMIN_REPORT_HANDLER, REPORT_GROUP),
