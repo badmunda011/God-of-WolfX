@@ -1,9 +1,9 @@
 from typing import Optional
 
-import MashaRoBot.modules.sql.rules_sql as sql
-from MashaRoBot import dispatcher
-from MashaRoBot.modules.helper_funcs.chat_status import user_admin
-from MashaRoBot.modules.helper_funcs.string_handling import markdown_parser
+import WolfXRobot.modules.sql.rules_sql as sql
+from WolfXRobot import dispatcher
+from WolfXRobot.modules.helper_funcs.chat_status import user_admin
+from WolfXRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -125,7 +125,7 @@ __help__ = """
  ❍ /clearrules*:* clear the rules for this chat.
 """
 
-__mod_name__ = "ʀᴜʟᴇ📝"
+__mod_name__ = "Rᴜʟᴇ📝"
 
 GET_RULES_HANDLER = CommandHandler("rules", get_rules, filters=Filters.group)
 SET_RULES_HANDLER = CommandHandler("setrules", set_rules, filters=Filters.group)
