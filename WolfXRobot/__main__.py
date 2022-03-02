@@ -85,7 +85,7 @@ buttons = [
         InlineKeyboardButton(
             text="🚨ℓοgѕ🚧", url="https://t.me/Cringe_Guys_logs"),
         InlineKeyboardButton(
-            text="🧨ѕυρρ๏яτ🎈", url="https://t.me/Cringe_Guys_Botz"),
+            text="🧨ѕυρρ๏яτ🎈", url="https://t.me/Team_Lazarus"),
     ],
     [
         InlineKeyboardButton(
@@ -93,7 +93,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🤖υρ∂ατєѕ🐺", url="https://t.me/Cringe_Guys_Botz"),
+            text="🤖υρ∂ατєѕ🐺", url="https://t.me/Lazarus_Botz"),
         InlineKeyboardButton(
             text="🍿мονιєѕ💎", url="https://t.me/joinchat/r9qx47U5xEZjY2E1"),
     ],
