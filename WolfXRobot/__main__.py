@@ -301,10 +301,10 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="👥 Support",
-                             url=f"https://t.me/Cringe_Guys_Botz"),
+                             url=f"https://t.me/Team_Lazarus"),
                        InlineKeyboardButton(
                              text="📢 Updates",
-                             url="https://t.me/Cringe_Guys_Bot")
+                             url="https://t.me/Lazarus_Botz")
                      ] 
                 ]
             ),
@@ -769,7 +769,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@Cringe_Guys_Botz", "🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄ Started! Working Fine For Status, Click /start And /help For More Info[.](https://telegra.ph/file/f218ecd16ac733d2a7795.jpg)", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.sendMessage(f"@Team_Lazarus", "🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄ Started! Working Fine For Status, Click /start And /help For More Info[.](https://telegra.ph/file/f218ecd16ac733d2a7795.jpg)", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
