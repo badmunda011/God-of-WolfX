@@ -121,7 +121,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="⚡нєℓρ & ϲοммєиτѕ🌟", url="https://t.me/WolfXRobot?start=help"),
+            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
