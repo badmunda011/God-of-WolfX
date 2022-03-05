@@ -62,7 +62,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-WOLF_IMG = (
+AASF = (
       "https://telegra.ph/file/9332b113ddb8555bf6ffe.jpg",
       "https://telegra.ph/file/fbc20e462231564a7407f.jpg",
       "https://telegra.ph/file/45df1a2dcf2e385d5cb7b.jpg",
@@ -305,16 +305,18 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_photo(
+            update.effective_message.reply_text(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
-                    random.choice(WOLF_IMG),
+                    random.choice(AASF),
+                    escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=5,
-             )
+                timeout=60,
+            )
+
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_photo(
@@ -488,15 +490,18 @@ def Masha_about_callback(update, context):
             ),
         )
     elif query.data == "masha_back":
-        query.message.edit_text(
-                PM_START_TEXT,
-                escape_markdown(first_name),
-                random.choice(WOLF_IMG),
-                escape_markdown(uptime),
+        query.message.edit_caption(
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    random.choice(AASF),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-        )
+            )
+
 
 
 @run_async
