@@ -62,9 +62,35 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
+WOLF_IMG = (
+      "https://telegra.ph/file/9332b113ddb8555bf6ffe.jpg",
+      "https://telegra.ph/file/fbc20e462231564a7407f.jpg",
+      "https://telegra.ph/file/45df1a2dcf2e385d5cb7b.jpg",
+      "https://telegra.ph/file/89e069ddc5c581a3501ef.jpg",
+      "https://telegra.ph/file/2d75f08b6da4ac453a500.jpg",
+      "https://telegra.ph/file/4b8a6352daa4597e5b507.jpg",
+      "https://telegra.ph/file/4ffaff9bb7f3d7818ef21.jpg",
+      "https://telegra.ph/file/a62f6de763dbb2b32dace.jpg",
+      "https://telegra.ph/file/7c5715131dd0f188e1582.jpg",
+      "https://telegra.ph/file/5f8e2c2e0147d8ec4fa86.jpg",
+      "https://telegra.ph/file/30dd0b041aaff87826264.jpg",
+      "https://telegra.ph/file/9b9de1bd73e482e45d47e.jpg",
+      "https://telegra.ph/file/6a1a542b0846bae071a15.jpg",
+      "https://telegra.ph/file/6fa7b00d49c8db42f2bb1.jpg",
+      "https://telegra.ph/file/f3e0cedf92b3f234cd84f.jpg",
+      "https://telegra.ph/file/60998d8f5520b95aec7f9.jpg",
+      "https://telegra.ph/file/2d9f1eb3c8ae1980bf9f6.jpg",
+      "https://telegra.ph/file/f830ea186d932a076719a.jpg",
+      "https://telegra.ph/file/0cde16e55a50dd22715cd.jpg",
+      "https://telegra.ph/file/74fc9c85fd341157fee1c.jpg",
+      "https://telegra.ph/file/dd8b72e3976d1fd35615a.jpg",
+      "https://telegra.ph/file/1b81b3ff11c45e4e31358.jpg",
+      "https://telegra.ph/file/be4e82ab2b9de9cb97fb0.jpg",
+      "https://telegra.ph/file/58b3cdf9203431ecfce2a.jpg",
+)
 
 PM_START_TEXT = """
-      🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄
+      🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄ [💋]({})
 
 ◈ I am called [ωοℓƒ-✗](https://t.me/wolfxrobot)
 ◈ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
@@ -287,7 +313,7 @@ def start(update: Update, context: CallbackContext):
                     sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
+                timeout=5,
              )
     else:
         first_name = update.effective_user.first_name
