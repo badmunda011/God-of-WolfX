@@ -68,6 +68,10 @@ PM_START_TEXT = """
 
 ◈ I am called [ωοℓƒ-✗](https://t.me/wolfxrobot)
 ◈ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴀᴅᴍɪɴ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴇxᴘʟᴏsɪᴠᴇ.
+───────────────────────
+× *Uᴘᴛɪᴍᴇ:* `{}`
+× `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
+───────────────────────
 ┏━━━━━━━━━━━━━━━━━━━━━ 
 ┃➪ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ Hᴀᴄᴋᴇʀ ғᴏʀ ᴀɴʏ 
 ┃ǫᴜᴇʀʏ ᴀɴᴅ [Hᴀᴄᴋᴇʀ](https://t.me/HMF_OWNER_1) ʜᴇʀᴇ.
@@ -275,17 +279,15 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-
             update.effective_message.reply_photo(
-
-                random.choice(WOLF_IMG),
                 PM_START_TEXT.format(
-                    
+                    escape_markdown(first_name),
+                    random.choice(WOLF_IMG),
                     sql.num_users(),
                     sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=5,
+                timeout=60,
              )
     else:
         first_name = update.effective_user.first_name
@@ -462,10 +464,12 @@ def Masha_about_callback(update, context):
     elif query.data == "masha_back":
         query.message.edit_text(
                 PM_START_TEXT,
+                escape_markdown(first_name),
+                random.choice(WOLF_IMG),
+                escape_markdown(uptime),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=True,
         )
 
 
