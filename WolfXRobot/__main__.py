@@ -115,7 +115,7 @@ buttons = [
         InlineKeyboardButton(
             text="🚨ℓοgѕ🚧", url="https://t.me/Cringe_Guys_logs"),
         InlineKeyboardButton(
-            text="🧨ѕυρρ๏яτ🎈", url="https://t.me/Team_Lazarus"),
+            text="🧨ѕυρρ๏яτ🎈", url="https://t.me/Cringe_X_Team"),
     ],
     [
         InlineKeyboardButton(
@@ -123,7 +123,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🤖υρ∂ατєѕ🐺", url="https://t.me/Lazarus_Botz"),
+            text="🤖υρ∂ατєѕ🐺", url="https://t.me/Cringe_X_BotZ"),
         InlineKeyboardButton(
             text="🍿мονιєѕ💎", url="https://t.me/joinchat/r9qx47U5xEZjY2E1"),
     ],
@@ -331,10 +331,10 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="👥 Support",
-                             url=f"https://t.me/Team_Lazarus"),
+                             url=f"https://t.me/Cringe_X_Team"),
                        InlineKeyboardButton(
                              text="📢 Updates",
-                             url="https://t.me/Lazarus_Botz")
+                             url="https://t.me/Cringe_X_BotZ")
                      ] 
                 ]
             ),
@@ -804,16 +804,16 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@Team_Lazarus", "🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄ Started! Working Fine For Status, Click /start And /help For More Info[.](https://telegra.ph/file/f218ecd16ac733d2a7795.jpg)", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.sendMessage(f"@Cringe_X_Team", "🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄ Started! Working Fine For Status, Click /start And /help For More Info[.](https://telegra.ph/file/f218ecd16ac733d2a7795.jpg)", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
                              text="Support 🚑",
-                             url=f"https://t.me/Cringe_Guys_Botz"),
+                             url=f"https://t.me/Cringe_X_Team"),
                        InlineKeyboardButton(
                              text="Updates 📢",
-                             url="https://t.me/Cringe_Guys_Bot")
+                             url="https://t.me/Cringe_X_BotZ")
                      ] 
                 ]
             ),
