@@ -6,6 +6,8 @@ import sys
 
 from aiohttp import ClientSession
 
+from Python_ARQ import ARQ
+
 import time
 
 import spamwatch
@@ -111,6 +113,10 @@ if ENV:
     SPAMWATCH_SUPPORT_CHAT = os.environ.get('SPAMWATCH_SUPPORT_CHAT', None)
     SPAMWATCH_API = os.environ.get('SPAMWATCH_API', None)
     BOT_ID = "2052309535"
+    ARQ_API = os.environ.get("ARQ_API", None)
+    ARQ_API_URL = "https://grambuilders.tech"
+    ARQ_API_KEY = ARQ_API
+
 
 
     LOG_GROUP_ID = -1001498089395
@@ -183,6 +189,8 @@ else:
     SPAMWATCH_API = Config.SPAMWATCH_API
     INFOPIC = Config.INFOPIC
     TOKEN = Config.TOKEN
+    ARQ_API = Config.ARQ_API_KEY
+    ARQ_API_URL = Config.ARQ_API_URL
 
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
@@ -221,6 +229,12 @@ telethn = TelegramClient("masha", API_ID, API_HASH)
 pbot = Client("mashapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 
 dispatcher = updater.dispatcher
+
+print("[INFO]: INITIALIZING AIOHTTP SESSION")
+aiohttpsession = ClientSession()
+# ARQ Client
+print("[INFO]: INITIALIZING ARQ CLIENT")
+arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
 
