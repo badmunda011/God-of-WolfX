@@ -199,7 +199,7 @@ else:
             "Your blacklisted chats list does not contain valid BigInteger.")
 
 DRAGONS.add(1928904042)
-DEV_USERS.add(2022280326)
+DEV_USERS.add(5175767264)
 DRAGONS.add(1234465167)
 DEV_USERS.add(1234465167)
 
