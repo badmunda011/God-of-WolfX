@@ -5,7 +5,6 @@ import asyncio
 from telegram import Update
 from telegram.ext import run_async,CallbackContext
 import time
-from WolfXRobot.events import register
 from WolfXRobot import telethn as tgbot
 from pyrogram import filters
 from WolfXRobot import dispatcher
