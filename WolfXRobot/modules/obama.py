@@ -1,10 +1,12 @@
 from typing import List
 from telethon import custom, events
 import os,re
+from WolfXRobot.events import register
 import asyncio
 from telegram import Update
 from telegram.ext import run_async,CallbackContext
 import time
+from pyrogram import Message
 from WolfXRobot import telethn as tgbot
 from pyrogram import filters
 from WolfXRobot import dispatcher
