@@ -9,7 +9,7 @@ from WolfXRobot import telethn as tgbot
 from WolfXRobot import telethn as aasf
 from WolfXRobot.events import register
 
-@bot.on_message(filters.command("obama", ['/', ".", "?"]))
+@register(pattern="/obama")
 async def status(bot, m: Message):
     msg = await m.reply("Conecting to Wolf X System System.")
     time.sleep(1)
