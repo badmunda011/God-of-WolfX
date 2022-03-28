@@ -10,7 +10,6 @@ WolfXRobot import telethn as tgbot
 from pyrogram import filters
 from WolfXRobot import dispatcher
 from WolfXRobot import telethn as bot
-from WolfXRobot.modules.disable import DisableAbleCommandHandler
 
 @register(pattern="/obama")
 async def status(bot, m: Message):
