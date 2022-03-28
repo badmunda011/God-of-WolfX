@@ -1,7 +1,9 @@
 from telethon import custom, events
 import os,re
 import asyncio
-
+import time
+from pyrogram import filters
+from pyrogram.types import Message
 from WolfXRobot import telethn as bot
 from WolfXRobot import telethn as tgbot
 from WolfXRobot import telethn as aasf
