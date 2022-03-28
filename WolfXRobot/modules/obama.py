@@ -23,3 +23,9 @@ async def status(bot, m: Message):
     time.sleep(1)
     await msg.edit("✪VᴇRɪFɪᴇD✪")
     time.sleep(2)
+
+__mod_name__ = "obama📝"
+
+__help__ = """
+ ~ /obama *:* Get Your verified or not. 
+"""
