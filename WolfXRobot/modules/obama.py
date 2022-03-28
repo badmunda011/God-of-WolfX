@@ -29,3 +29,4 @@ __mod_name__ = "obama📝"
 __help__ = """
  ~ /obama *:* Get Your verified or not. 
 """
+
