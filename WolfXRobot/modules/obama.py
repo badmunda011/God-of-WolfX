@@ -1,9 +1,11 @@
+from telethon import custom, events
+import os,re
 import asyncio
-import time
 
-from WolfXRobot import bot
-from pyrogram import filters
-from pyrogram.types import Message
+from WolfXRobot import telethn as bot
+from WolfXRobot import telethn as tgbot
+from WolfXRobot import telethn as aasf
+from WolfXRobot.events import register
 
 @bot.on_message(filters.command("obama", ['/', ".", "?"]))
 async def status(bot, m: Message):
