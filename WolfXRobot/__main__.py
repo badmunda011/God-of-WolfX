@@ -113,7 +113,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🚨ℓοgѕ🚧", url="https://t.me/Cringe_Guys_logs"),
+            text="🚨ℓοgѕ🚧", url="https://t.me/KawaiiXLogs"),
         InlineKeyboardButton(
             text="🧨ѕυρρ๏яτ🎈", url="https://t.me/PlayBoysDXD"),
     ],
@@ -123,7 +123,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🤖υρ∂ατєѕ🐺", url="https://t.me/Kawaii_X_Team"),
+            text="🤖υρ∂ατєѕ🐺", url="https://t.me/Glaston_Knights_Union"),
         InlineKeyboardButton(
             text="🍿мονιєѕ💎", url="https://t.me/joinchat/r9qx47U5xEZjY2E1"),
     ],
@@ -334,7 +334,7 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/PlayBoysDXD"),
                        InlineKeyboardButton(
                              text="📢 Updates",
-                             url="https://t.me/Kawaii_X_Team")
+                             url="https://t.me/Glaston_Knights_Union")
                      ] 
                 ]
             ),
@@ -813,7 +813,7 @@ def main():
                              url=f"https://t.me/PlayBoysDXD"),
                        InlineKeyboardButton(
                              text="Updates 📢",
-                             url="https://t.me/Kawaii_X_Team")
+                             url="https://t.me/Glaston_Knights_Union")
                      ] 
                 ]
             ),
