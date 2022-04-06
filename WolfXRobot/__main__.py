@@ -302,7 +302,7 @@ def start(update: Update, context: CallbackContext):
         else:
              first_name = update.effective_user.first_name
              update.effective_message.reply_photo(
-                random.choice(WOLF_IMG),
+                random.choice(AASF),
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
@@ -310,8 +310,8 @@ def start(update: Update, context: CallbackContext):
                     sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=5,
-                   )
+                timeout=60,
+             )
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_photo(
