@@ -98,7 +98,7 @@ PM_START_TEXT = """
 **✯ Server Uptime : {}**
 **✯ {} users, across {} chats.**
 ───────────────────────
-× Pᴏᴡᴇʀᴇᴅ Bʏ: Cʀɪɴɢᴇ ✗ Tᴇᴀᴍ !
+× Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ!
 ───────────────────────
 """
 
@@ -300,19 +300,18 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
+             first_name = update.effective_user.first_name
+             update.effective_message.reply_photo(
+                random.choice(WOLF_IMG),
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
-                    random.choice(AASF),
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-            )
-
+                timeout=5,
+                   )
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_photo(
