@@ -534,12 +534,18 @@ def support_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [             
-                    InlineKeyboardButton(text="👥 Support", url=f"https://t.me/PlayBoysDXD"),
-                    InlineKeyboardButton(text="📢 Updates", url="https://t.me/Glaston_Knights_Union"),
-                ],
                 [
-                    InlineKeyboardButton(text="Go Back", callback_data="support_back")
+                 [
+                    InlineKeyboardButton(text="Nᴇᴡꜱ", url=f"https://t.me/PlayBoysDXD"),
+                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url=f"https://t.me/PlayBoysDXD"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/PlayBoysDXD"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/Glaston_Knights_Union"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="support_back"),
+                 
                  ]
                 ]
             ),
