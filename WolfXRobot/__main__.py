@@ -90,7 +90,7 @@ AASF = (
 )
 
 PM_START_TEXT = """
-    ( " Whassup {}** ー(  ° v ° )ﾉ     [🖤]({})
+     Whassup {}** ー(  ° v ° )ﾉ     [🖤]({})
 ───────────────────────
 × I'ᴍ ωοℓƒ ✗ Aɴɪᴍᴇ - Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ
 × I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!
@@ -99,7 +99,7 @@ PM_START_TEXT = """
 **✯ {} users, across {} chats.**
 ───────────────────────
 × Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ!
-─────────────────────── ", )
+───────────────────────
 """
 
 buttons = [
@@ -302,7 +302,7 @@ def start(update: Update, context: CallbackContext):
         else:
              first_name = update.effective_user.first_name
              update.effective_message.reply_text(
-             PM_START_TEXT.format(
+               PM_START_TEXT.format(
                     random.choice(AASF),
                     escape_markdown(first_name),
                     escape_markdown(uptime),
