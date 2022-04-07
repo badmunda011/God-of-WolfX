@@ -111,7 +111,7 @@ buttons = [
         InlineKeyboardButton(
             text="🚨ℓοgѕ🚧", url="https://t.me/KawaiiXLogs"),
         InlineKeyboardButton(
-            text="🧨ѕυρρ๏яτ🎈", url="https://t.me/PlayBoysDXD"),
+            text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
     ],
     [
         InlineKeyboardButton(
@@ -526,6 +526,40 @@ def Source_about_callback(update, context):
         )
 
 @run_async
+def support_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "support_":
+        query.message.edit_text(
+            text=""" *Support And Update Channel List*.""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                  [                  
+                       InlineKeyboardButton(
+                             text="👥 Support",
+                             url=f"https://t.me/PlayBoysDXD"),
+                       InlineKeyboardButton(
+                             text="📢 Updates",
+                             url="https://t.me/Glaston_Knights_Union")
+                     ] 
+                    InlineKeyboardButton(text="Go Back", callback_data="support_back")
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "support_back":
+        query.message.edit_text(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=True,
+        )
+
+
+@run_async
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
     args = update.effective_message.text.split(None, 1)
@@ -833,6 +867,7 @@ def main():
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
+    support_callback_handler = CallbackQueryHandler(support_about_callback, pattern=r"support_")
 
     # dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
@@ -844,6 +879,7 @@ def main():
     dispatcher.add_handler(settings_callback_handler)
     dispatcher.add_handler(migrate_handler)
     dispatcher.add_handler(donate_handler)
+    dispatcher.add_handler(support_callback_handler)
 
     dispatcher.add_error_handler(error_callback)
 
