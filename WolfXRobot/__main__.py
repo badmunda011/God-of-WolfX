@@ -89,8 +89,8 @@ AASF = (
       "https://telegra.ph/file/58b3cdf9203431ecfce2a.jpg",
 )
 
-PM_START_TEXT = """
-      Whassup {}** ー(  ° v ° )ﾉ     [🖤]({})
+PM_START_TEXT = ( "
+     Whassup {}** ー(  ° v ° )ﾉ     [🖤]({})
 ───────────────────────
 × I'ᴍ ωοℓƒ ✗ Aɴɪᴍᴇ - Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ
 × I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!
@@ -100,7 +100,7 @@ PM_START_TEXT = """
 ───────────────────────
 × Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ!
 ───────────────────────
-"""
+", )
 
 buttons = [
     [
@@ -303,7 +303,7 @@ def start(update: Update, context: CallbackContext):
              first_name = update.effective_user.first_name
              update.effective_message.reply_photo(
              random.choice(AASF),
-             (PM_START_TEXT).format(
+             caption=random.choice(PM_START_TEXT).format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
