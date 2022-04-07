@@ -528,10 +528,9 @@ def Source_about_callback(update, context):
 def support_about_callback(update, context):
     query = update.callback_query
     if query.data == "support_":
-        query.message.edit_text(
+        query.message.edit_caption(
             text=""" *Support And Update Channel List*.""",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -551,12 +550,11 @@ def support_about_callback(update, context):
             ),
         )
     elif query.data == "support_back":
-        query.message.edit_text(
+        query.message.edit_caption(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=True,
         )
 
 
