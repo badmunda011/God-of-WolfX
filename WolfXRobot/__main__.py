@@ -302,8 +302,8 @@ def start(update: Update, context: CallbackContext):
         else:
              first_name = update.effective_user.first_name
              update.effective_message.reply_text(
-             random.choice(AASF),
              PM_START_TEXT.format(
+                    random.choice(AASF),
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
