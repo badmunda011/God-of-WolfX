@@ -325,8 +325,7 @@ def start(update: Update, context: CallbackContext):
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="👥 Support",
-                             url=f", callback_data="support_"),
+                            text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
                        InlineKeyboardButton(
                              text="📢 Updates",
                              url="https://t.me/Glaston_Knights_Union")
@@ -841,7 +840,7 @@ def main():
                   [                  
                        InlineKeyboardButton(
                              text="Support 🚑",
-                             url=f",callback_data="support_"),
+                             url=f"https://t.me/PlayboysDx"),
                        InlineKeyboardButton(
                              text="Updates 📢",
                              url="https://t.me/Glaston_Knights_Union")
