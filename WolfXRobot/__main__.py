@@ -111,7 +111,7 @@ buttons = [
         InlineKeyboardButton(
             text="🚨ℓοgѕ🚧", url="https://t.me/KawaiiXLogs"),
         InlineKeyboardButton(
-            caption="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
+            text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
     ],
     [
         InlineKeyboardButton(
