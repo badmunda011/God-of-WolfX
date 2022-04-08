@@ -529,7 +529,7 @@ def support_about_callback(update, context):
     query = update.callback_query
     if query.data == "support_":
         query.message.edit_caption(
-            text=""" *Support And Update Channel List*.""",
+            caption=""" *Support And Update Channel List*.""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
