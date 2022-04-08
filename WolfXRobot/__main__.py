@@ -111,7 +111,7 @@ buttons = [
         InlineKeyboardButton(
             text="🚨ℓοgѕ🚧", url="https://t.me/KawaiiXLogs"),
         InlineKeyboardButton(
-            text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
+            text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
     ],
     [
         InlineKeyboardButton(
@@ -551,6 +551,41 @@ def support_about_callback(update, context):
             ),
         )
     elif query.data == "support_back":
+        query.message.edit_caption(
+                PM_START_TEXT,
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
+                timeout=60,
+                disable_web_page_preview=True,
+        )
+
+@run_async
+def pmsupport_about_callback(update, context):
+    query = update.callback_query
+    if query.data == "pmsupport_":
+        query.message.edit_text(
+            text=""" *Support And Update Channel List*.""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/PlayBoysDXD"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/Glaston_Knights_Union"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Mᴏᴠɪᴇs", url=f"https://t.me/+uzQ0M7QIQeQ2NWI9"),
+                    InlineKeyboardButton(text="Lᴏɢs", url=f"https://t.me/KawaiiXLogs"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="pmsupport_back"),
+                 
+                 ]
+                ]
+            ),
+        )
+    elif query.data == "pmsupport_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -869,6 +904,8 @@ def main():
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
     support_callback_handler = CallbackQueryHandler(support_about_callback, pattern=r"support_")
+    pmsupport_callback_handler = CallbackQueryHandler(pmsupport_about_callback, pattern=r"pmsupport_")
+
 
     # dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
@@ -881,6 +918,7 @@ def main():
     dispatcher.add_handler(migrate_handler)
     dispatcher.add_handler(donate_handler)
     dispatcher.add_handler(support_callback_handler)
+    dispatcher.add_handler(pmsupport_callback_handler)
 
     dispatcher.add_error_handler(error_callback)
 
