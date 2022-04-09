@@ -317,11 +317,24 @@ def start(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
-                       InlineKeyboardButton(
-                            text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
-                       InlineKeyboardButton(
-                             text="📢 Updates",
-                             url="https://t.me/Glaston_Knights_Union")
+                      InlineKeyboardButton(
+                text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
+            ],
+            [
+                      InlineKeyboardButton(
+                text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
+            ],
+            [
+                      InlineKeyboardButton(
+                text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
+                      InlineKeyboardButton(
+                text="🎀αɓουτ🔎", callback_data="masha_"),
+           ],
+           [
+                      InlineKeyboardButton(
+                text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1"
+
+
                      ] 
                 ]
             ),
@@ -542,7 +555,7 @@ def support_about_callback(update, context):
             ),
         )
     elif query.data == "support_back":
-        query.message.edit_text(
+        query.message.edit_caption(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
@@ -575,7 +588,7 @@ def pmsupport_about_callback(update, context):
             ),
         )
     elif query.data == "pmsupport_back":
-        query.message.edit_caption(
+        query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
