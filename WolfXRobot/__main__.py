@@ -595,13 +595,15 @@ def get_help(update: Update, context: CallbackContext):
     if chat.type != chat.PRIVATE:
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
-            update.effective_message.reply_caption(
+            update.effective_message.reply_text(
                 f"Contact me in PM to get help of {module.capitalize()}",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help", text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
+                                text="Help",
+                                url="t.me/{}?start=ghelp_{}".format(
+                                    context.bot.username, module
                                 ),
                             )
                         ]
@@ -609,13 +611,14 @@ def get_help(update: Update, context: CallbackContext):
                 ),
             )
             return
-        update.effective_message.reply_caption(
+        update.effective_message.reply_text(
             "Contact me in PM to get the list of possible commands.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help", text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
+                            text="Help",
+                            url="t.me/{}?start=help".format(context.bot.username),
                          
                         )
                     ]
