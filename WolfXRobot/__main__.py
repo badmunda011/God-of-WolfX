@@ -494,7 +494,7 @@ def Masha_about_callback(update, context):
 def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
-        query.message.edit_text(
+        query.message.edit_caption(
             text=""" Hi..🤗 I'm *Hacker*
                  \nMy source code is private  [support](t.me/Cringe_Guys_botz) .""",
             parse_mode=ParseMode.MARKDOWN,
@@ -508,7 +508,7 @@ def Source_about_callback(update, context):
             ),
         )
     elif query.data == "source_back":
-        query.message.edit_text(
+        query.message.edit_caption(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
@@ -542,7 +542,7 @@ def support_about_callback(update, context):
             ),
         )
     elif query.data == "support_back":
-        query.message.edit_caption(
+        query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
