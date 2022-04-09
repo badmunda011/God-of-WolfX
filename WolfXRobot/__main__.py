@@ -523,7 +523,6 @@ def support_about_callback(update, context):
         query.message.edit_caption(
             caption=""" *Support And Update Channel List*.""",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -548,7 +547,6 @@ def support_about_callback(update, context):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=True,
         )
 
 @run_async
@@ -558,7 +556,6 @@ def pmsupport_about_callback(update, context):
         query.message.edit_caption(
             caption=""" *Support And Update Channel List*.""",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
@@ -583,7 +580,6 @@ def pmsupport_about_callback(update, context):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-                disable_web_page_preview=True,
         )
 
 
