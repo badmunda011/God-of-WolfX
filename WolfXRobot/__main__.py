@@ -409,7 +409,7 @@ def help_button(update, context):
                 + HELPABLE[module].__help__
             )
             query.message.edit_caption(
-                text=text,
+                caption=text,
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
@@ -578,7 +578,7 @@ def pmsupport_about_callback(update, context):
             ),
         )
     elif query.data == "pmsupport_back":
-        query.message.edit_text(
+        query.message.edit_caption(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
@@ -601,7 +601,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help",
+                                caption="Help",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -617,7 +617,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            caption="Help",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
@@ -638,7 +638,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(caption="Back", callback_data="help_back")]]
             ),
         )
 
@@ -711,7 +711,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back",
+                                caption="Back",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
