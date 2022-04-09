@@ -319,6 +319,8 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                             text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
+                  ],
+                  [
                        InlineKeyboardButton(
                             text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
  
@@ -593,7 +595,7 @@ def get_help(update: Update, context: CallbackContext):
     if chat.type != chat.PRIVATE:
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
-            update.effective_message.reply_text(
+            update.effective_message.reply_caption(
                 f"Contact me in PM to get help of {module.capitalize()}",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -609,7 +611,7 @@ def get_help(update: Update, context: CallbackContext):
                 ),
             )
             return
-        update.effective_message.reply_text(
+        update.effective_message.reply_caption(
             "Contact me in PM to get the list of possible commands.",
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -779,7 +781,7 @@ def get_settings(update: Update, context: CallbackContext):
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
             text = "Click here to get this chat's settings, as well as yours."
-            msg.reply_text(
+            msg.reply_caption(
                 text,
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -807,12 +809,12 @@ def donate(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
     bot = context.bot
     if chat.type == "private":
-        update.effective_message.reply_text(
+        update.effective_message.reply_caption(
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
         if OWNER_ID != 254318997 and DONATION_LINK:
-            update.effective_message.reply_text(
+            update.effective_message.reply_caption(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
                 parse_mode=ParseMode.MARKDOWN,
@@ -827,11 +829,11 @@ def donate(update: Update, context: CallbackContext):
                 disable_web_page_preview=True,
             )
 
-            update.effective_message.reply_text(
+            update.effective_message.reply_caption(
                 "I've PM'ed you about donating to my creator!"
             )
         except Unauthorized:
-            update.effective_message.reply_text(
+            update.effective_message.reply_caption(
                 "Contact me in PM first to get donation information."
             )
 
