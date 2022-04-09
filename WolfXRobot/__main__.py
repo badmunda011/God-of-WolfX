@@ -108,19 +108,13 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🚨ℓοgѕ🚧", url="https://t.me/KawaiiXLogs"),
-        InlineKeyboardButton(
-            text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
-    ],
-    [
-        InlineKeyboardButton(
             text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="🤖υρ∂ατєѕ🐺", url="https://t.me/Glaston_Knights_Union"),
+            text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
         InlineKeyboardButton(
-            text="🍿мονιєѕ💎", url="https://t.me/joinchat/r9qx47U5xEZjY2E1"),
+            text="🎀αɓουτ🔎", callback_data="pmsupport_"),
     ],
     [
         InlineKeyboardButton(
@@ -461,8 +455,8 @@ def help_button(update, context):
 def Masha_about_callback(update, context):
     query = update.callback_query
     if query.data == "masha_":
-        query.message.edit_text(
-            text=""" ℹ️ I'm *MASHA*, a powerful group management bot built to help you manage your group easily.
+        query.message.edit_caption(
+            caption=""" ℹ️ I'm *Wolf X*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -470,7 +464,6 @@ def Masha_about_callback(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n\n_Masha's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/Mr-Dark-Prince/WolfXRobot).
                  \n\nIf you have any question about Masha, let us know at @WasteBots.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -562,7 +555,7 @@ def support_about_callback(update, context):
 def pmsupport_about_callback(update, context):
     query = update.callback_query
     if query.data == "pmsupport_":
-        query.message.edit_text(
+        query.message.edit_caption(
             caption=""" *Support And Update Channel List*.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
