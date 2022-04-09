@@ -314,9 +314,7 @@ def start(update: Update, context: CallbackContext):
             ),
             
             parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                  [                  
+            reply_markup=InlineKeyboardMarkup(         
                      
 
 
