@@ -308,7 +308,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_photo(
-                random.choice(WOLF_IMG), caption=random.choice(TEXXT).format(
+                random.choice(WOLF_IMG), caption=random.choice(PM_START_TEXT).format(
                 first_name,
                 uptime
             ),
@@ -317,26 +317,7 @@ def start(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
-                      InlineKeyboardButton(
-                text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
-            ],
-            [
-                      InlineKeyboardButton(
-                text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
-            ],
-            [
-                      InlineKeyboardButton(
-                text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
-                      InlineKeyboardButton(
-                text="🎀αɓουτ🔎", callback_data="masha_"),
-           ],
-           [
-                      InlineKeyboardButton(
-                text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1"
-           
-                ]
-            ),
-        )
+                     
 
 
 def error_handler(update, context):
