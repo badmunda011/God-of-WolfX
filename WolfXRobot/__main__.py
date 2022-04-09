@@ -601,9 +601,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help",
-                                url="t.me/{}?start=ghelp_{}".format(
-                                    context.bot.username, module
+                                text="Help", text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
                                 ),
                             )
                         ]
@@ -617,8 +615,8 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
-                            url="t.me/{}?start=help".format(context.bot.username),
+                            text="Help", text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
+                         
                         )
                     ]
                 ]
