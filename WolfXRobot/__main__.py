@@ -601,7 +601,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                caption="Help",
+                                text="Help",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -617,7 +617,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            caption="Help",
+                            text="Help",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
@@ -711,7 +711,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                caption="Back",
+                                text="Back",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
