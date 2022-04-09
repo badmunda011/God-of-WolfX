@@ -485,6 +485,7 @@ def Masha_about_callback(update, context):
     elif query.data == "masha_back":
         query.message.edit_caption(
                 PM_START_TEXT.format(
+                    escape_markdown(first_name),
                     random.choice(AASF),
                     escape_markdown(uptime),
                     sql.num_users(),
