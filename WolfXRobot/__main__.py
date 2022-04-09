@@ -114,7 +114,7 @@ buttons = [
         InlineKeyboardButton(
             text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
         InlineKeyboardButton(
-            text="🎀αɓουτ🔎", callback_data="pmsupport_"),
+            text="🎀αɓουτ🔎", callback_data="masha_"),
     ],
     [
         InlineKeyboardButton(
