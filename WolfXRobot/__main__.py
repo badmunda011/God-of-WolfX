@@ -322,7 +322,6 @@ def start(update: Update, context: CallbackContext):
                 uptime
             ),
             
-            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(       
             [
                   [                  
