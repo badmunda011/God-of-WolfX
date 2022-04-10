@@ -480,8 +480,8 @@ def Masha_about_callback(update, context):
     elif query.data == "masha_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
-        query.message.edit_text(
-                PM_START_TEXT.format(
+        query.message.edit_caption(
+             caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
                     random.choice(WOLF_IMG),
                     escape_markdown(uptime),
