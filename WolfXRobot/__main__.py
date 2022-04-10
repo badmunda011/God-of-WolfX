@@ -183,7 +183,15 @@ WOLF_IMG = (
       "https://telegra.ph/file/58b3cdf9203431ecfce2a.jpg",
 )
 
-TEXXT = ( "*Hey* [{}](tg://settings/), *You Know That Wolf Never Gives, Born Since:* `{}`", "*Hey* [{}](tg://settings/), *Wolf Came for you! Since:* `{}`", )
+TEXXT = ( """*Hey* [{}](tg://settings/),
+───────────────────────
+× I'ᴍ ωοℓƒ ✗ Aɴɪᴍᴇ - Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ
+× I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!
+───────────────────────
+**✯ Server Uptime : {}**
+**✯ {} users, across {} chats.**
+───────────────────────
+× Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ!""", )
 
 RANGER_COMBOT_IMG = "https://telegra.ph/file/dd8b72e3976d1fd35615a.jpg"
 
@@ -309,6 +317,8 @@ def start(update: Update, context: CallbackContext):
         update.effective_message.reply_photo(
                 random.choice(WOLF_IMG), caption=random.choice(TEXXT).format(
                 first_name,
+                sql.num_users(),
+                sql.num_chats()),
                 uptime
             ),
             
@@ -316,10 +326,12 @@ def start(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(       
             [
                   [                  
-                       InlineKeyboardButton(
-                            text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
+                      InlineKeyboardButton(
+                            text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
                   ],
                   [
+                      InlineKeyboardButton(
+                            text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
                        InlineKeyboardButton(
                             text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
  
