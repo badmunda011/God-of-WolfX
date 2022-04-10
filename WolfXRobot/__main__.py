@@ -452,7 +452,6 @@ def help_button(update, context):
     except BadRequest:
         pass
 
-
 @run_async
 def wolf_about_callback(update, context):
     query = update.callback_query
@@ -472,23 +471,26 @@ def wolf_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="wolf_back")
+                    InlineKeyboardButton(text="Back", callback_data="masha_back")
                  ]
                 ]
             ),
         )
-     elif query.data == "wolf_back":
-        query.message.edit_caption(
-                PM_START_TEXT.format(
+    elif query.data == "wolf_back":
+        first_name = update.effective_user.first_name
+             update.effective_message.reply_photo(
+               photo=random.choice(AASF),
+               caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
-                    random.choice(AASF),
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
+                disable_web_page_preview=False,
             )
+
 
 
 @run_async
