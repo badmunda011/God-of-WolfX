@@ -204,7 +204,6 @@ buttons = [
                             text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
                        InlineKeyboardButton(
                             text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
-                  ),
                ],
            ]
 
