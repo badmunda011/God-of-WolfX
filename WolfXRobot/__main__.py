@@ -245,11 +245,10 @@ def send_help(chat_id, text, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     dispatcher.bot.send_photo(
         chat_id=chat_id,
-        photo=WOLF_IMG,
+        photo=random.choice(WOLF_IMG),
         caption=text,
         parse_mode=ParseMode.MARKDOWN,
-        reply_markup=keyboard,
-    )
+        reply_markup=keyboard)
 
 
 @run_async
