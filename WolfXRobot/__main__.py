@@ -195,19 +195,26 @@ TEXXT = """ *Hey* [{}](tg://settings/),
 """
 
 buttons = [
-    [                  
-                      InlineKeyboardButton(
-                            text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
-                  ],
-                  [
-                      InlineKeyboardButton(
-                            text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
-                       InlineKeyboardButton(
-                            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
-               ],
-           ]
-
-
+    [
+        InlineKeyboardButton(
+            text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
+        InlineKeyboardButton(
+            text="🎀αɓουτ🔎", callback_data="wolf_"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1"
+    ),
+    ],
+]
                      
 
 RANGER_COMBOT_IMG = "https://telegra.ph/file/dd8b72e3976d1fd35615a.jpg"
