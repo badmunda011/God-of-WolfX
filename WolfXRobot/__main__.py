@@ -580,7 +580,7 @@ def pmsupport_about_callback(update, context):
             ),
         )
     elif query.data == "pmsupport_back":
-        query.message.edit_caption(
+        query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
