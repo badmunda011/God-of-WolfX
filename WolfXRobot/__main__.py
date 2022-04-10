@@ -454,9 +454,9 @@ def help_button(update, context):
 
 
 @run_async
-def Masha_about_callback(update, context):
+def wolf_about_callback(update, context):
     query = update.callback_query
-    if query.data == "masha_":
+    if query.data == "wolf_":
         query.message.edit_caption(
             caption=""" ℹ️ I'm *Wolf X*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
@@ -472,12 +472,12 @@ def Masha_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="masha_back")
+                    InlineKeyboardButton(text="Back", callback_data="wolf_back")
                  ]
                 ]
             ),
         )
-     elif query.data == "masha_back":
+     elif query.data == "wolf_back":
         query.message.edit_caption(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
@@ -888,7 +888,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_")
+    about_callback_handler = CallbackQueryHandler(wolf_about_callback, pattern=r"wolf_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
