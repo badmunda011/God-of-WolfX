@@ -479,7 +479,7 @@ def Masha_about_callback(update, context):
         )
     elif query.data == "masha_back":
         first_name = update.effective_user.first_name
-             update.effective_message.reply_photo(
+             query.message.edit_caption(
                photo=random.choice(AASF),
                caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
