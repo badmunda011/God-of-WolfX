@@ -183,7 +183,7 @@ WOLF_IMG = (
       "https://telegra.ph/file/58b3cdf9203431ecfce2a.jpg",
 )
 
-TEXXT = ( """*Hey* [{}](tg://settings/),
+TEXXT = """ *Hey* [{}](tg://settings/),
 ───────────────────────
 × I'ᴍ ωοℓƒ ✗ Aɴɪᴍᴇ - Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ
 × I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!
@@ -191,7 +191,7 @@ TEXXT = ( """*Hey* [{}](tg://settings/),
 **✯ Server Uptime : {}**
 **✯ {} users, across {} chats.**
 ───────────────────────
-× Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ!""", )
+× Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ! """
 
 RANGER_COMBOT_IMG = "https://telegra.ph/file/dd8b72e3976d1fd35615a.jpg"
 
@@ -315,13 +315,16 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_photo(
-                random.choice(WOLF_IMG), caption=random.choice(TEXXT).format(
-                first_name,
+               photo=random.choice(WOLF_IMG),
+               caption=TEXXT.format(
+                escape_markdown(first_name),
+                escape_markdown(uptime),
                 sql.num_users(),
                 sql.num_chats()),
-                uptime
+                timeout=60,
             ),
-            
+
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(       
             [
                   [                  
