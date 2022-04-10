@@ -343,7 +343,7 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             ),
-
+          )
     
 
 def error_handler(update, context):
