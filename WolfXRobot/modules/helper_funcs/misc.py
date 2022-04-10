@@ -1,4 +1,3 @@
-from math import ceil
 from typing import Dict, List
 
 from WolfXRobot import NO_LOAD
@@ -40,40 +39,46 @@ def split_message(msg: str) -> List[str]:
 def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
     if not chat:
         modules = sorted(
-            [EqInlineKeyboardButton(x.__mod_name__,
-                                    callback_data="{}_module({})".format(prefix, x.__mod_name__.lower())) for x
-             in module_dict.values()])
+            [
+                EqInlineKeyboardButton(
+                    x.__mod_name__,
+                    callback_data="{}_module({})".format(
+                        prefix, x.__mod_name__.lower()
+                    ),
+                )
+                for x in module_dict.values()
+            ]
+        )
     else:
         modules = sorted(
-            [EqInlineKeyboardButton(x.__mod_name__,
-                                    callback_data="{}_module({},{})".format(prefix, chat, x.__mod_name__.lower())) for x
-             in module_dict.values()])
+            [
+                EqInlineKeyboardButton(
+                    x.__mod_name__,
+                    callback_data="{}_module({},{})".format(
+                        prefix, chat, x.__mod_name__.lower()
+                    ),
+                )
+                for x in module_dict.values()
+            ]
+        )
 
-    pairs = [
-    modules[i * 3:(i + 1) * 3] for i in range((len(modules) + 3 - 1) // 3)
-    ]
+    pairs = [modules[i * 3 : (i + 1) * 3] for i in range((len(modules) + 3 - 1) // 3)]
 
     round_num = len(modules) / 3
     calc = len(modules) - round(round_num)
-    if calc == 1:
-        pairs.append((modules[-1], ))
-    elif calc == 3:
-        pairs.append((modules[-1], ))
-
-    max_num_pages = ceil(len(pairs) / 10)
-    modulo_page = page_n % max_num_pages
-
-    # can only have a certain amount of buttons side by side
-    if len(pairs) > 10:
-        pairs = pairs[modulo_page * 10:10 * (modulo_page + 1)] + [
-            (EqInlineKeyboardButton("➊", callback_data="{}_prev({})".format(prefix, modulo_page)),
-             EqInlineKeyboardButton("➋", callback_data="{}_next({})".format(prefix, modulo_page)),
-             EqInlineKeyboardButton("➌", callback_data="{}_next({})".format(prefix, modulo_page)))]
+    if calc in [1, 2]:
+        pairs.append((modules[-1],))
+    elif calc == 2:
+        pairs.append((modules[-1],))
 
     else:
-        pairs += [[EqInlineKeyboardButton("[戻る] Back ⤴️", callback_data="masha_back")],
-                  [EqInlineKeyboardButton("[チャット] Chat", url="https://t.me/PlayBoysDXD")]]
-                    
+        pairs += [
+                  [
+                    EqInlineKeyboardButton("╰✰ Cʜᴀɴɴᴇʟ", url="https://t.me/+uzQ0M7QIQeQ2NWI9"), 
+                    EqInlineKeyboardButton("「 Bᴀᴄᴋ 」", callback_data="tiana_"), 
+                    EqInlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ ✰╮", url="https://t.me/PlayBoysDXD")
+                  ]
+                 ]
 
     return pairs
 
