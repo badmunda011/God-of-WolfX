@@ -341,9 +341,10 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
+            ] 
+                ]
             ),
-          )
-    
+        )
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
