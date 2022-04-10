@@ -483,7 +483,7 @@ def Masha_about_callback(update, context):
         query.message.edit_text(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
-                    START_IMG,
+                    photo=random.choice(AASF),
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
