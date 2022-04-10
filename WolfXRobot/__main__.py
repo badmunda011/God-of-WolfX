@@ -140,7 +140,7 @@ buutons = [
                             text="Close ❌",
                             callback_data="cutiipii_back"),
                         InlineKeyboardButton(text="Help 🔐", callback_data="help_back"),
-                    ], 
+                    ],
     ]
 
                     
@@ -191,7 +191,25 @@ TEXXT = """ *Hey* [{}](tg://settings/),
 **✯ Server Uptime : {}**
 **✯ {} users, across {} chats.**
 ───────────────────────
-× Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ! """
+× Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ! 
+"""
+
+buttons = [
+    [                  
+                      InlineKeyboardButton(
+                            text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
+                  ],
+                  [
+                      InlineKeyboardButton(
+                            text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
+                       InlineKeyboardButton(
+                            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
+                  ),
+               ],
+           ]
+
+
+                     
 
 RANGER_COMBOT_IMG = "https://telegra.ph/file/dd8b72e3976d1fd35615a.jpg"
 
@@ -321,27 +339,11 @@ def start(update: Update, context: CallbackContext):
                 escape_markdown(uptime),
                 sql.num_users(),
                 sql.num_chats()),
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             ),
 
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(       
-            [
-                  [                  
-                      InlineKeyboardButton(
-                            text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
-                  ],
-                  [
-                      InlineKeyboardButton(
-                            text="🧨ѕυρρ๏яτ🎈", callback_data="support_"),
-                       InlineKeyboardButton(
-                            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
- 
-                     ] 
-                ]
-            ),
-        )
-   
     
 
 def error_handler(update, context):
