@@ -12,8 +12,6 @@ from WolfXRobot import (
     LOGGER,
     OWNER_ID,
     PORT,
-    BOT_TUT,
-    MUSICBOT_TUT,
     UPDATE_CHANNEL,
     TOKEN,
     URL,
