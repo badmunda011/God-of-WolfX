@@ -12,7 +12,6 @@ from WolfXRobot import (
     LOGGER,
     OWNER_ID,
     PORT,
-    UPDATE_CHANNEL,
     TOKEN,
     URL,
     WEBHOOK,
@@ -804,7 +803,7 @@ Bot Admins
             
 Support
             
-• [Click here](https://t.me/{SUPPORT_CHAT}) to consult the updated list of Official Supporters of the bot.
+• [Click here](https://t.me/PlayBoysDXD) to consult the updated list of Official Supporters of the bot.
             
 • Thanks to all our donors for supporting server and development expenses and all those who have reported bugs or suggested new features.
             
@@ -1291,7 +1290,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "𝙏𝙞𝙖𝙣𝙖𝘽𝙤𝙩 𝙐𝙥𝙙𝙖𝙩𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮✅")
+            dispatcher.bot.sendMessage("@PlayBoysDXD", "𝙏𝙞𝙖𝙣𝙖𝘽𝙤𝙩 𝙐𝙥𝙙𝙖𝙩𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮✅")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
