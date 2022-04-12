@@ -372,7 +372,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                  [
                   [InlineKeyboardButton(text="📄 Source", callback_data="tiana_source"), 
-                   InlineKeyboardButton(text="🫂 Support", url=f"https://t.me/{SUPPORT_CHAT}")]
+                   InlineKeyboardButton(text="🫂 Support", url="https://t.me/PlayBoysDXD")]
                  ]
               ),
                 parse_mode=ParseMode.MARKDOWN,              
@@ -519,7 +519,7 @@ def tiana_callback_handler(update, context):
         )
     elif query.data == "tiana_help":
         query.message.edit_caption(
-            caption=f"""*Nᴇᴡ  Tᴏ  WolfXRobot!  Hᴇʀᴇ  Is  Tʜᴇ  Qᴜɪᴄᴋ  Sᴛᴀʀᴛ  Gᴜɪᴅᴇ  Wʜɪᴄʜ  Wɪʟʟ  Hᴇʟᴘ  Yᴏᴜ  Tᴏ  Uɴᴅᴇʀsᴛᴀɴᴅ  Wʜᴀᴛ  Is  WolfXRobot  Aɴᴅ  Hᴏᴡ  Tᴏ  Usᴇ  Iᴛ.
+            caption="""*Nᴇᴡ  Tᴏ  WolfXRobot!  Hᴇʀᴇ  Is  Tʜᴇ  Qᴜɪᴄᴋ  Sᴛᴀʀᴛ  Gᴜɪᴅᴇ  Wʜɪᴄʜ  Wɪʟʟ  Hᴇʟᴘ  Yᴏᴜ  Tᴏ  Uɴᴅᴇʀsᴛᴀɴᴅ  Wʜᴀᴛ  Is  WolfXRobot  Aɴᴅ  Hᴏᴡ  Tᴏ  Usᴇ  Iᴛ.
 
 Cʟɪᴄᴋ  Bᴇʟᴏᴡ  Bᴜᴛᴛᴏɴ  Tᴏ  Aᴅᴅ  Bᴏᴛ  Iɴ  Yᴏᴜʀ  Gʀᴏᴜᴘ. Bᴀsɪᴄ  Tᴏᴜʀ  Sᴛᴀʀᴛᴇᴅ  Tᴏ  Kɴᴏᴡ  Aʙᴏᴜᴛ  Hᴏᴡ  Tᴏ  Usᴇ  Mᴇ*""",
             parse_mode=ParseMode.MARKDOWN,
@@ -533,7 +533,7 @@ Cʟɪᴄᴋ  Bᴇʟᴏᴡ  Bᴜᴛᴛᴏɴ  Tᴏ  Aᴅᴅ  Bᴏᴛ  Iɴ  Yᴏᴜ
         )
     elif query.data == "tiana_helpa":
         query.message.edit_caption(
-            caption=f"""<b>Hᴇʏ,  Wᴇʟᴄᴏᴍᴇ  Tᴏ  Cᴏɴғɪɢᴜʀᴀᴛɪᴏɴ  Tᴜᴛᴏʀɪᴀʟ
+            caption="""<b>Hᴇʏ,  Wᴇʟᴄᴏᴍᴇ  Tᴏ  Cᴏɴғɪɢᴜʀᴀᴛɪᴏɴ  Tᴜᴛᴏʀɪᴀʟ
 
 Bᴇғᴏʀᴇ  Wᴇ  Gᴏ,  I  Nᴇᴇᴅ  Aᴅᴍɪɴ  Pᴇʀᴍɪssɪᴏɴs  Iɴ  Tʜɪs  Cʜᴀᴛ  Tᴏ  Wᴏʀᴋ  Pʀᴏᴘᴇʀʟʏ.
 1). Cʟɪᴄᴋ  Mᴀɴᴀɢᴇ  Gʀᴏᴜᴘ.
@@ -614,7 +614,7 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
         )
     elif query.data == "tiana_term":
         query.message.edit_caption(
-           =f"""✗ *Terms and Conditions:*
+           caption="""✗ *Terms and Conditions:*
 
 - Only your first name, last name (if any) and username (if any) is stored for a convenient communication!
 - No group ID or it's messages are stored, we respect everyone's privacy.
@@ -624,8 +624,8 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
 
 *NOTE:* Terms and Conditions might change anytime
 
-*Updates Channel:* @{UPDATE_CHANNEL}
-*Support Chat:* @{SUPPORT_GROUP}""",
+*Updates Channel:* @Glaston_Knights_Union
+*Support Chat:* @PlayBoysDXD""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -655,14 +655,14 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
         )
     elif query.data == "tiana_music":
         query.message.edit_caption(
-            caption=f"✗ *Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*"
+            caption="✗ *Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*"
             
             f"\n\n1.) first, add me to your group."
             f"\n\n2.) then promote me as admin and give all permissions except anonymous admin."
             f"\n\n3.) add @wolf_Assitant to your group."
             f"\n\n4.) turn on the video chat first before start to play music."
             f"\n\n*✗ Lets Enjoy The Tiana Music And Join Support Group @PrincexSupport*"
-            f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ Bʏ:* @{UPDATE_CHANNEL}",
+            f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ Bʏ:* @Glaston_Knights_Union",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -824,12 +824,12 @@ Support
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Nᴇᴡꜱ", url=f"t.me/{UPDATE_CHANNEL}"),
+                    InlineKeyboardButton(text="Nᴇᴡꜱ", url="https://t.me/Glaston_Knights_Union"),
                     InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url="https://t.me/PlayBoysDXD"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT_CHAT}"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{UPDATE_CHANNEL}"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/PlayBoysDXD"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/Glaston_Knights_Union"),
                  ],
                  [
                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_"),
@@ -986,7 +986,7 @@ def tiana_about_callback(update: Update, context: CallbackContext):
                  ],
                  [  
                     InlineKeyboardButton(text="🫂 𝙎𝙪𝙥𝙥𝙤𝙧𝙩", callback_data="tiana_support"),
-                    InlineKeyboardButton(text="👨‍✈️ 𝙊𝙬𝙣𝙚𝙧", url=f"t.me/HMf_Owner_1"),
+                    InlineKeyboardButton(text="👨‍✈️ 𝙊𝙬𝙣𝙚𝙧", url="t.me/HMf_Owner_1"),
                  ],
                  [
                      InlineKeyboardButton(text="𝙏𝙚𝙧𝙢𝙨 𝘼𝙣𝙙 𝘾𝙤𝙣𝙙𝙞𝙩𝙞𝙤𝙣𝙨❗️", callback_data="tiana_term"),
