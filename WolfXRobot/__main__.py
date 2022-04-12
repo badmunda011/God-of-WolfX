@@ -204,28 +204,6 @@ TEXXT = """ *Hey* [{}](tg://settings/),
 × Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ! 
 """
 
-buttons = [
-    [
-        InlineKeyboardButton(
-            text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="tiana_"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
-        InlineKeyboardButton(
-            text="🎀αɓουτ🔎", callback_data="about_"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1"
-    ),
-    ],
-]
-           
 
 SUPPORT_CHAT = "https://t.me/PlayBoysDXD"         
 UPDATE_CHANNEL = "https://t.me/Glaston_Knights_Union"
@@ -347,6 +325,42 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
              )
+
+
+else:
+        first_name = update.effective_user.first_name
+        update.effective_message.reply_photo(
+                random.choice(WOLF_IMG), caption=TEXXT.format(
+                first_name,
+                uptime
+            ),
+            
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+
+                [
+        InlineKeyboardButton(
+            text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="tiana_"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
+        InlineKeyboardButton(
+            text="🎀αɓουτ🔎", callback_data="about_"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1"
+
+                     ] 
+                ]
+            ),
+        )
+
 
 
     else:
