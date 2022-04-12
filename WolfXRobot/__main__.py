@@ -9,20 +9,14 @@ import WolfXRobot.modules.sql.users_sql as sql
 from WolfXRobot import (
     ALLOW_EXCL,
     CERT_PATH,
-    DONATION_LINK,
     LOGGER,
     OWNER_ID,
     PORT,
     BOT_TUT,
     MUSICBOT_TUT,
     UPDATE_CHANNEL,
-    BOT_USERNAME,
-    BOT_NAME,
-    ASS_USERNAME,
-    START_IMG,
     TOKEN,
     URL,
-    OWNER_USERNAME,
     WEBHOOK,
     SUPPORT_CHAT,
     dispatcher,
@@ -131,7 +125,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
+            text="🧨ѕυρρ๏яτ🎈", callback_data="tiana_support"),
         InlineKeyboardButton(
             text="🎀αɓουτ🔎", callback_data="wolf_"),
     ],
@@ -234,8 +228,10 @@ buttons = [
     ),
     ],
 ]
-                     
+           
 
+SUPPORT_CHAT = "https://t.me/PlayBoysDXD"         
+UPDATE_CHANNEL = "https://t.me/Glaston_Knights_Union"
 DONATE_STRING = """иσ ι иєє∂ ι ¢αи ℓινє ωιтнσυт αиу ∂σиαтισи, ѕтιℓℓ ιи ∂σиαтισи נυѕт נσιи συя [¢нαт](t.me/playBoysDXD)"""
 
 
@@ -366,7 +362,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,)
-              )
+              
 
 
     else:
@@ -536,13 +532,13 @@ def tiana_callback_handler(update, context):
         )
     elif query.data == "tiana_help":
         query.message.edit_caption(
-            caption=f"""*Nᴇᴡ  Tᴏ  {BOT_NAME}!  Hᴇʀᴇ  Is  Tʜᴇ  Qᴜɪᴄᴋ  Sᴛᴀʀᴛ  Gᴜɪᴅᴇ  Wʜɪᴄʜ  Wɪʟʟ  Hᴇʟᴘ  Yᴏᴜ  Tᴏ  Uɴᴅᴇʀsᴛᴀɴᴅ  Wʜᴀᴛ  Is  {BOT_NAME}  Aɴᴅ  Hᴏᴡ  Tᴏ  Usᴇ  Iᴛ.
+            caption=f"""*Nᴇᴡ  Tᴏ  WolfXRobot!  Hᴇʀᴇ  Is  Tʜᴇ  Qᴜɪᴄᴋ  Sᴛᴀʀᴛ  Gᴜɪᴅᴇ  Wʜɪᴄʜ  Wɪʟʟ  Hᴇʟᴘ  Yᴏᴜ  Tᴏ  Uɴᴅᴇʀsᴛᴀɴᴅ  Wʜᴀᴛ  Is  WolfXRobot  Aɴᴅ  Hᴏᴡ  Tᴏ  Usᴇ  Iᴛ.
 
 Cʟɪᴄᴋ  Bᴇʟᴏᴡ  Bᴜᴛᴛᴏɴ  Tᴏ  Aᴅᴅ  Bᴏᴛ  Iɴ  Yᴏᴜʀ  Gʀᴏᴜᴘ. Bᴀsɪᴄ  Tᴏᴜʀ  Sᴛᴀʀᴛᴇᴅ  Tᴏ  Kɴᴏᴡ  Aʙᴏᴜᴛ  Hᴏᴡ  Tᴏ  Usᴇ  Mᴇ*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
               [[InlineKeyboardButton(text="𝙎𝙚𝙩𝙪𝙥 𝙏𝙪𝙩𝙤𝙧𝙞𝙖𝙡 🎥", callback_data="tiana_vida")],
-               [InlineKeyboardButton(text="➕️ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕️", url="https://t.me/{BOT_USERNAME}?startgroup=true")],       
+               [InlineKeyboardButton(text="➕️ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕️", url="https://t.me/WolfXRobot?startgroup=true")],       
                 [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="tiana_"),
                  InlineKeyboardButton(text="➡️", callback_data="tiana_helpa")]
               ]
@@ -554,7 +550,7 @@ Cʟɪᴄᴋ  Bᴇʟᴏᴡ  Bᴜᴛᴛᴏɴ  Tᴏ  Aᴅᴅ  Bᴏᴛ  Iɴ  Yᴏᴜ
 
 Bᴇғᴏʀᴇ  Wᴇ  Gᴏ,  I  Nᴇᴇᴅ  Aᴅᴍɪɴ  Pᴇʀᴍɪssɪᴏɴs  Iɴ  Tʜɪs  Cʜᴀᴛ  Tᴏ  Wᴏʀᴋ  Pʀᴏᴘᴇʀʟʏ.
 1). Cʟɪᴄᴋ  Mᴀɴᴀɢᴇ  Gʀᴏᴜᴘ.
-2). Gᴏ  Tᴏ  Aᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs  Aɴᴅ  Aᴅᴅ</b>  {BOT_USERNAME}  <b>As  Aᴅᴍɪɴ.
+2). Gᴏ  Tᴏ  Aᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs  Aɴᴅ  Aᴅᴅ</b>  @WolfXRobot  <b>As  Aᴅᴍɪɴ.
 3). Gɪᴠɪɴɢ  Fᴜʟʟ  Pᴇʀᴍɪssɪᴏɴs  Mᴀᴋᴇ  Tɪᴀɴᴀ  Fᴜʟʟʏ  Usᴇғᴜʟ</b>""",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
@@ -676,7 +672,7 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
             
             f"\n\n1.) first, add me to your group."
             f"\n\n2.) then promote me as admin and give all permissions except anonymous admin."
-            f"\n\n3.) add @{ASS_USERNAME} to your group."
+            f"\n\n3.) add @wolf_Assitant to your group."
             f"\n\n4.) turn on the video chat first before start to play music."
             f"\n\n*✗ Lets Enjoy The Tiana Music And Join Support Group @PrincexSupport*"
             f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ Bʏ:* @{UPDATE_CHANNEL}",
@@ -811,11 +807,11 @@ Tiana has a additional feature for non-admin users who want to use admin command
         )
     elif query.data == "tiana_about":
         query.message.edit_caption(
-            caption=f"""{BOT_NAME} it's online since January 2022 and it's constantly updated!
+            caption= """WolfXRobot it's online since January 2022 and it's constantly updated!
             
 Bot Admins
                        
-• @{OWNER_USERNAME}, bot creator and main developer.
+• @HMF_Owner_1, bot creator and main developer.
             
 • The Doctor, server manager and developer.
             
@@ -836,13 +832,13 @@ Support
         )
     elif query.data == "tiana_support":
         query.message.edit_caption(
-            caption=f"*{BOT_NAME} Support Chats*",
+            caption="*WolfXRobot Support Chats*",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
                     InlineKeyboardButton(text="Nᴇᴡꜱ", url=f"t.me/{UPDATE_CHANNEL}"),
-                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url=f"{DONATION_LINK}"),
+                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url="https://t.me/PlayBoysDXD"),
                  ],
                  [
                     InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"t.me/{SUPPORT_CHAT}"),
@@ -1003,7 +999,7 @@ def tiana_about_callback(update: Update, context: CallbackContext):
                  ],
                  [  
                     InlineKeyboardButton(text="🫂 𝙎𝙪𝙥𝙥𝙤𝙧𝙩", callback_data="tiana_support"),
-                    InlineKeyboardButton(text="👨‍✈️ 𝙊𝙬𝙣𝙚𝙧", url=f"t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="👨‍✈️ 𝙊𝙬𝙣𝙚𝙧", url=f"t.me/HMf_Owner_1"),
                  ],
                  [
                      InlineKeyboardButton(text="𝙏𝙚𝙧𝙢𝙨 𝘼𝙣𝙙 𝘾𝙤𝙣𝙙𝙞𝙩𝙞𝙤𝙣𝙨❗️", callback_data="tiana_term"),
@@ -1020,7 +1016,7 @@ def tiana_about_callback(update: Update, context: CallbackContext):
         query.message.edit_caption(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
-                    START_IMG,
+                    WOlF_IMG,
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
@@ -1257,7 +1253,7 @@ def donate(update: Update, context: CallbackContext):
             text = "𝙔𝙤𝙪 𝘾𝙖𝙣 𝘿𝙤𝙣𝙖𝙩𝙚 𝙈𝙚 𝙃𝙚𝙧𝙚", parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(
                [
                  [                   
-                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url=f"{DONATION_LINK}"),
+                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url="https://t.me/PlayBoysDXD"),
                  ]
                ]
         )
@@ -1272,7 +1268,7 @@ def donate(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                [
                  [                   
-                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url=f"{DONATION_LINK}"),
+                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url="https://t.me/PlayBoysDXD"),
                  ]
                ]
              )
