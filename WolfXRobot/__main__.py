@@ -365,14 +365,14 @@ def start(update: Update, context: CallbackContext):
                 sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
+                timeout=60,)
               )
 
 
-else:
+    else:
           first_name = update.effective_user.first_name
           update.effective_message.reply_photo(
-                TIANA_IMG, caption="""*Hᴇʟʟᴏ {} !*
+                WOLf_IMG, caption="""*Hᴇʟʟᴏ {} !*
 ───────────────────
 × *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
 × *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
