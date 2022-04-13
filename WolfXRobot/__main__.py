@@ -346,23 +346,13 @@ def start(update: Update, context: CallbackContext):
                     sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(
                  [
-                  [InlineKeyboardButton(
-            text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="tiana_"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
-        InlineKeyboardButton(
-            text="🎀αɓουτ🔎", callback_data="about_"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1")]
-             
+                  [InlineKeyboardButton(text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
+                    ],                           
+                    [InlineKeyboardButton(text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="tiana_")],
+                    [InlineKeyboardButton(text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
+                     InlineKeyboardButton(text="🎀αɓουτ🔎", callback_data="about_")],
+                    [InlineKeyboardButton(text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1")],
+                  ]
               ),
                 parse_mode=ParseMode.MARKDOWN,              
             )
