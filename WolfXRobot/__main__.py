@@ -982,7 +982,6 @@ def tiana_about_callback(update: Update, context: CallbackContext):
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     photo=random.choice(WOlF_IMG),
-                    escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(buttons),
