@@ -486,6 +486,7 @@ def tiana_callback_handler(update, context):
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_caption(
+        update.effective_message.reply_photo(
                 photo=random.choice(AASF),
                 caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
@@ -634,7 +635,7 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
         )
     elif query.data == "tiana_music":
         query.message.edit_caption(
-            caption="""✗ *Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*
+            caption="""✗ *Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:
             
 ✗ Step No 1 first, add me to your group.
 ✗ Step No 2 then promote me as admin and give all permissions except anonymous admin.
