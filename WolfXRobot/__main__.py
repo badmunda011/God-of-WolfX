@@ -640,7 +640,7 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
 ✗ Step No 2 then promote me as admin and give all permissions except anonymous admin.
 ✗ Step No 3 add @wolf_Assitant to your group.
 ✗ Step No 4 turn on the video chat first before start to play music.
-✗ Step No 5 Lets Enjoy The Wolf X Music And Join Support Group @PrincexSupport
+✗ Step No 5 Lets Enjoy The Wolf X Music And Join Support Group @PlayBoysDXD
 ✗ Pᴏᴡᴇʀᴇᴅ Bʏ: @Glaston_Knights_Union*""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
