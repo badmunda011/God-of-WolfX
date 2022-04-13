@@ -324,49 +324,13 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-             ),
           )
-
-else:
-        first_name = update.effective_user.first_name
-        update.effective_message.reply_photo(
-                random.choice(WOLF_IMG), caption=TEXXT.format(
-                first_name,
-                uptime
-            ),
-            
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-
-                [
-        InlineKeyboardButton(
-            text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="tiana_"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
-        InlineKeyboardButton(
-            text="🎀αɓουτ🔎", callback_data="about_"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1"
-
-                     ] 
-                ]
-            ),
-        )
-
 
 
     else:
           first_name = update.effective_user.first_name
           update.effective_message.reply_photo(
-                WOLf_IMG, caption="""*Hᴇʟʟᴏ {} !*
+          photo=random.choice(WOlf_IMG), caption="""*Hᴇʟʟᴏ {} !*
 ───────────────────
 × *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
 × *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
@@ -382,8 +346,22 @@ else:
                     sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(
                  [
-                  [InlineKeyboardButton(text="📄 Source", callback_data="tiana_source"), 
-                   InlineKeyboardButton(text="🫂 Support", url="https://t.me/PlayBoysDXD")]
+                  [InlineKeyboardButton(
+            text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="tiana_"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
+        InlineKeyboardButton(
+            text="🎀αɓουτ🔎", callback_data="about_"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1"
                  ]
               ),
                 parse_mode=ParseMode.MARKDOWN,              
@@ -519,7 +497,7 @@ def tiana_callback_handler(update, context):
         query.message.edit_caption(
                 caption = PM_START_TEXT.format(
                     escape_markdown(first_name),
-                    Wolf_IMG,
+                   photo=random.choice(WOlf_IMG),
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
@@ -1014,7 +992,7 @@ def tiana_about_callback(update: Update, context: CallbackContext):
         query.message.edit_caption(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
-                    WOlF_IMG,
+                    photo=random.choice(WOlF_IMG),
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
@@ -1304,7 +1282,20 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage("@PlayBoysDXD", "𝙏𝙞𝙖𝙣𝙖𝘽𝙤𝙩 𝙐𝙥𝙙𝙖𝙩𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮✅")
+            dispatcher.bot.sendMessage("@PlayBoysDX", "[🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄](https://t.me/WolfXRobot) Started! Working Fine For Status, Click /start And /help For More Info[.](https://telegra.ph/file/a2a551f17067ec4b39685.jpg)", parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                  [                  
+                       InlineKeyboardButton(
+                             text="Support 🚑",
+                             url=f"https://t.me/PlayBoysDXD"),
+                       InlineKeyboardButton(
+                             text="Updates 📢",
+                             url="https://t.me/+uzQ0M7QIQeQ2NWI9")
+                     ] 
+                ]
+            ),
+        ) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
