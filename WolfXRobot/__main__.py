@@ -109,6 +109,7 @@ PM_START_TEXT = """
 **✯ {} users, across {} chats.**
 ───────────────────────
 × Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ!
+───────────────────────
 """
 
 buttons = [
@@ -118,13 +119,13 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="help_back"),
+            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="tiana_"),
     ],
     [
         InlineKeyboardButton(
             text="🧨ѕυρρ๏яτ🎈", callback_data="tiana_support"),
         InlineKeyboardButton(
-            text="🎀αɓουτ🔎", callback_data="wolf_"),
+            text="🎀αɓουτ🔎", callback_data="about_"),
     ],
     [
         InlineKeyboardButton(
@@ -349,7 +350,7 @@ def start(update: Update, context: CallbackContext):
                   [InlineKeyboardButton(text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
                     ],                           
                     [InlineKeyboardButton(text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="tiana_")],
-                    [InlineKeyboardButton(text="🧨ѕυρρ๏яτ🎈", callback_data="pmsupport_"),
+                    [InlineKeyboardButton(text="🧨ѕυρρ๏яτ🎈", callback_data="Tiana_support"),
                      InlineKeyboardButton(text="🎀αɓουτ🔎", callback_data="about_")],
                     [InlineKeyboardButton(text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1")],
                   ]
@@ -635,12 +636,12 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
         query.message.edit_caption(
             caption="✗ *Hᴇʀᴇ Iꜱ Tʜᴇ Hᴇʟᴘ 「Aꜱꜱɪꜱᴛᴀɴᴛ」 Mᴏᴅᴜʟᴇ:*"
             
-            f"\n\n1.) first, add me to your group."
-            f"\n\n2.) then promote me as admin and give all permissions except anonymous admin."
-            f"\n\n3.) add @wolf_Assitant to your group."
-            f"\n\n4.) turn on the video chat first before start to play music."
-            f"\n\n*✗ Lets Enjoy The Tiana Music And Join Support Group @PrincexSupport*"
-            f"\n\n*✗ Pᴏᴡᴇʀᴇᴅ Bʏ:* @Glaston_Knights_Union",
+            "\n\n1.) first, add me to your group."
+            "\n\n2.) then promote me as admin and give all permissions except anonymous admin."
+            "\n\n3.) add @wolf_Assitant to your group."
+            "\n\n4.) turn on the video chat first before start to play music."
+            "\n\n*✗ Lets Enjoy The Tiana Music And Join Support Group @PrincexSupport*"
+            "\n\n*✗ Pᴏᴡᴇʀᴇᴅ Bʏ:* @Glaston_Knights_Union",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -802,13 +803,13 @@ Support
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Nᴇᴡꜱ", url="https://t.me/Glaston_Knights_Union"),
-                    InlineKeyboardButton(text="Dᴏɴᴀᴛᴇ Mᴇ", url="https://t.me/PlayBoysDXD"),
+                    
+                 ],InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/PlayBoysDXD"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/Glaston_Knights_Union"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/PlayBoysDXD"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/Glaston_Knights_Union"),
-                 ],
+                    InlineKeyboardButton(text="Mᴏᴠɪᴇs", url=f"https://t.me/+uzQ0M7QIQeQ2NWI9"),
+                    InlineKeyboardButton(text="Lᴏɢs", url=f"https://t.me/KawaiiXLogs"),
                  [
                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_"),
                  
@@ -1270,7 +1271,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage("@PlayBoysDX", "[🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄](https://t.me/WolfXRobot) Started! Working Fine For Status, Click /start And /help For More Info[.](https://telegra.ph/file/a2a551f17067ec4b39685.jpg)", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.sendMessage("@PlayBoysDX", "🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄ Started! Working Fine For Status, Click /start And /help For More Info[❤️](https://telegra.ph/file/a2a551f17067ec4b39685.jpg)", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
