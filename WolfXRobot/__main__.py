@@ -485,10 +485,9 @@ def tiana_callback_handler(update, context):
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_caption(
-                caption = PM_START_TEXT.format(
+                photo=random.choice(AASF),
+                caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
-                   photo=random.choice(WOlf_IMG),
-                    escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(buttons),
