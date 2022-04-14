@@ -924,14 +924,14 @@ DOWNVOTE - Use downvote keywords like "-", "-1", etc to downvote a cb.message.
         )
     elif query.data == "tiana_source":
         query.message.edit_caption(
-            caption="""*Tianabot is Now Open Source Bot Project.*
+            caption="""*WolfXRobot is Now Open Private Bot Project.*
 
 *Click below Button to Get Source Code.*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", url="github.com/Prince-Botz/Tianabot"),
+                    InlineKeyboardButton(text="📄Repo Private", url="https://github.com/Thiruselvan999/God-of-Wolf-New"),
                  ]
                 ]
             ),
