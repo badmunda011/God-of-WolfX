@@ -802,19 +802,12 @@ Support
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    
-                 ],InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/PlayBoysDXD"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/Glaston_Knights_Union"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Mᴏᴠɪᴇs", url=f"https://t.me/+uzQ0M7QIQeQ2NWI9"),
-                    InlineKeyboardButton(text="Lᴏɢs", url=f"https://t.me/KawaiiXLogs"),
-                 [
-                    InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_"),
-                 
+                 [InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/PlayBoysDXD"),                           
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/Glaston_Knights_Union")],
+                    [InlineKeyboardButton(text="Mᴏᴠɪᴇs", url=f"https://t.me/+uzQ0M7QIQeQ2NWI9"),
+                     InlineKeyboardButton(text="Lᴏɢs", url=f"https://t.me/KawaiiXLogs")],
+                    [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_")],
                  ]
-                ]
             ),
         )
     elif query.data == "wolf_tools":
