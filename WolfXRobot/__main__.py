@@ -798,7 +798,7 @@ Support
         )
     elif query.data == "wolf_support":
         query.message.edit_caption(
-            caption="*WolfXRobot Support Chats*",
+            caption="""*WolfXRobot Support Chats*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
