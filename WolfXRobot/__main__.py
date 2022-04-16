@@ -473,12 +473,11 @@ def wolf_callback_handler(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                     InlineKeyboardButton(text="➕ 𝘼𝙡𝙡 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 ➕", callback_data="help_back"),
+                     InlineKeyboardButton(text="➕ Aʟʟ Cᴏᴍᴍᴀɴᴅs ➕", callback_data="help_back"),
                     ],                           
-                    [InlineKeyboardButton(text="𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚 𝙈𝙚 ❓", callback_data="wolf_help"),
-                     InlineKeyboardButton(text="𝙈𝙪𝙨𝙞𝙘 𝘽𝙤𝙩 🎧", callback_data="wolf_music")],
-                    [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="wolf_back"),
-                     InlineKeyboardButton(text="𝙁𝙪𝙣 𝙏𝙤𝙤𝙡𝙨 ⚙", callback_data="wolf_tools")],
+                    [InlineKeyboardButton(text="Mᴜsɪᴄ Hᴇʟᴘ 🎧", callback_data="wolf_music")],
+                    [InlineKeyboardButton(text="Fᴜɴ Tᴏᴏʟs ⚙", callback_data="wolf_tools),
+                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="wolf_back")],
                 ]
             ),
         )
@@ -503,10 +502,8 @@ def wolf_callback_handler(update, context):
 Cʟɪᴄᴋ  Bᴇʟᴏᴡ  Bᴜᴛᴛᴏɴ  Tᴏ  Aᴅᴅ  Bᴏᴛ  Iɴ  Yᴏᴜʀ  Gʀᴏᴜᴘ. Bᴀsɪᴄ  Tᴏᴜʀ  Sᴛᴀʀᴛᴇᴅ  Tᴏ  Kɴᴏᴡ  Aʙᴏᴜᴛ  Hᴏᴡ  Tᴏ  Usᴇ  Mᴇ*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-              [[InlineKeyboardButton(text="𝙎𝙚𝙩𝙪𝙥 𝙏𝙪𝙩𝙤𝙧𝙞𝙖𝙡 🎥", callback_data="wolf_vida")],
-               [InlineKeyboardButton(text="➕️ 𝘼𝙙𝙙 𝙢𝙚 𝙩𝙤 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕️", url="https://t.me/WolfXRobot?startgroup=true")],       
-                [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="wolf_"),
-                 InlineKeyboardButton(text="➡️", callback_data="wolf_helpa")]
+              [[InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="wolf_"),
+                 InlineKeyboardButton(text="𝙉𝙚𝙭𝙩 ➡️", callback_data="wolf_helpa")]
               ]
             ),
         )
@@ -627,9 +624,8 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="➕ 𝘼𝙡𝙡 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 ➕", callback_data="help_back")],
-                [InlineKeyboardButton(text="⬅️", callback_data="wolf_helpd"),
-                InlineKeyboardButton(text="𝙈𝙖𝙞𝙣 𝙈𝙚𝙣𝙪", callback_data="wolf_")]]
+                [[InlineKeyboardButton(text="➕ Aʟʟ Cᴏᴍᴍᴀɴᴅs  ➕", callback_data="help_back")],
+                [InlineKeyboardButton(text="⬅️", callback_data="wolf_helpd")]]
             ),
         )
     elif query.data == "wolf_music":
@@ -645,11 +641,10 @@ Aɢᴀɪɴ  Tʜᴀɴᴋs  Fᴏʀ  Usɪɴɢ  Mᴇ
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-               [[InlineKeyboardButton(text="𝙎𝙚𝙩𝙪𝙥 𝙏𝙪𝙩𝙤𝙧𝙞𝙖𝙡 🎥", callback_data="wolf_vidb")],
-                [InlineKeyboardButton(text="𝙋𝙡𝙖𝙮 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨", callback_data="wolf_musica"),
-                 InlineKeyboardButton(text="𝘽𝙤𝙩 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨", callback_data="wolf_musicc")],
-                [InlineKeyboardButton(text="𝘼𝙙𝙢𝙞𝙣 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨", callback_data="wolf_musicb"),
-                 InlineKeyboardButton(text="𝙀𝙭𝙩𝙧𝙖 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨", callback_data="wolf_musicd")],
+               [[InlineKeyboardButton(text="Pʟᴀʏ Cᴏᴍᴍᴀɴᴅs", callback_data="wolf_musica"),
+                 InlineKeyboardButton(text="Bᴏᴛ Cᴏᴍᴍᴀɴᴅs", callback_data="wolf_musicc")],
+                [InlineKeyboardButton(text="Aᴅᴍɪɴ Cᴏᴍᴍᴀɴᴅs", callback_data="wolf_musicb"),
+                 InlineKeyboardButton(text="Eᴀᴛʀᴀ Cᴏᴍᴍᴀɴᴅs", callback_data="wolf_musicd")],
                 [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="wolf_")]
                ]
             ),
@@ -924,7 +919,7 @@ DOWNVOTE - Use downvote keywords like "-", "-1", etc to downvote a cb.message.
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="📄Repo Private", url="https://github.com/Thiruselvan999/God-of-Wolf-New"),
+                    InlineKeyboardButton(text="📄Rᴇᴘᴏ Pʀɪᴠᴀᴛᴇ ", url="https://github.com/Thiruselvan999/God-of-Wolf-New"),
                  ]
                 ]
             ),
@@ -953,15 +948,15 @@ def wolf_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                [
                  [
-                     InlineKeyboardButton(text="❗️ 𝘼𝙗𝙤𝙪𝙩", callback_data="wolf_about"),
-                     InlineKeyboardButton(text="📄 𝙎𝙤𝙪𝙧𝙘𝙚", callback_data="wolf_source"),
+                     InlineKeyboardButton(text="❗️ Aʙᴏᴜᴛ ", callback_data="wolf_about"),
+                     InlineKeyboardButton(text="📄 Sᴏᴜʀᴄᴇ ", callback_data="wolf_source"),
                  ],
                  [  
-                    InlineKeyboardButton(text="🫂 𝙎𝙪𝙥𝙥𝙤𝙧𝙩", callback_data="wolf_support"),
-                    InlineKeyboardButton(text="👨‍✈️ 𝙊𝙬𝙣𝙚𝙧", url="t.me/HMf_Owner_1"),
+                    InlineKeyboardButton(text="🫂 Sᴜᴘᴘᴏʀᴛ ", callback_data="wolf_support"),
+                    InlineKeyboardButton(text="👨‍✈️ Oᴡɴᴇʀ ", url="t.me/HMf_Owner_1"),
                  ],
                  [
-                     InlineKeyboardButton(text="𝙏𝙚𝙧𝙢𝙨 𝘼𝙣𝙙 𝘾𝙤𝙣𝙙𝙞𝙩𝙞𝙤𝙣𝙨❗️", callback_data="wolf_term"),
+                     InlineKeyboardButton(text="Tᴇʀᴍs Aɴᴅ Cᴏɴᴅɪᴛɪᴏɴs ❗️", callback_data="wolf_term"),
                  ],
                  [
                      InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_back"),
@@ -1264,7 +1259,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage("@PlayBoysDX", "🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄ Started! Working Fine For Status, Click /start And /help For More Info[❤️](https://telegra.ph/file/a2a551f17067ec4b39685.jpg)", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.sendMessage("@PlayBoysDX", "🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄ Started! Working Fine For Status, Click /start And /help For More Info[.](https://telegra.ph/file/a2a551f17067ec4b39685.jpg)", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
