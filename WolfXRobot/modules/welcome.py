@@ -1046,6 +1046,7 @@ WELC_HELP_TXT = (
     " • `{id}`*:* this represents the user's *id*\n"
     " • `{count}`*:* this represents the user's *member number*.\n"
     " • `{time}`*:* this represents the current time *when member joined*.\n"
+    " • `{date}`*:* this represents the current date *when member joined*.\n"
     " • `{chatname}`*:* this represents the *current chat name*.\n"
     "\nEach variable MUST be surrounded by `{}` to be replaced.\n"
     "Welcome messages also support markdown, so you can make any elements bold/italic/code/links. "
