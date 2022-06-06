@@ -4,6 +4,7 @@ import re
 import time
 from functools import partial
 from contextlib import suppress
+from datetime import datetime
 
 import WolfXRobot.modules.sql.welcome_sql as sql
 import WolfXRobot
@@ -56,9 +57,15 @@ VALID_WELCOME_FORMATTERS = [
     "username",
     "id",
     "count",
+    "time",
+    "date",
     "chatname",
     "mention",
 ]
+
+currentDateAndTime = datetime.now()
+currentTime = currentDateAndTime.strftime("%H:%M:%S")
+currentDate = datetime.today().strftime('%Y-%m-%d')
 
 ENUM_FUNC_MAP = {
     sql.Types.TEXT.value: dispatcher.bot.send_message,
@@ -317,6 +324,8 @@ def new_member(update: Update, context: CallbackContext):
                     else:
                         fullname = escape_markdown(first_name)
                     count = chat.get_members_count()
+                    time = currentTime
+                    date = currentDate
                     mention = mention_markdown(new_mem.id, escape_markdown(first_name))
                     if new_mem.username:
                         username = "@" + escape_markdown(new_mem.username)
@@ -333,6 +342,8 @@ def new_member(update: Update, context: CallbackContext):
                         username=username,
                         mention=mention,
                         count=count,
+                        time=time,
+                        date=date,
                         chatname=escape_markdown(chat.title),
                         id=new_mem.id,
                     )
@@ -576,6 +587,8 @@ def left_member(update: Update, context: CallbackContext):
                 else:
                     fullname = escape_markdown(first_name)
                 count = chat.get_members_count()
+                time = currentTime
+                date = currentDate
                 mention = mention_markdown(left_mem.id, first_name)
                 if left_mem.username:
                     username = "@" + escape_markdown(left_mem.username)
@@ -592,6 +605,8 @@ def left_member(update: Update, context: CallbackContext):
                     username=username,
                     mention=mention,
                     count=count,
+                    time=time,
+                    date=date,
                     chatname=escape_markdown(chat.title),
                     id=left_mem.id,
                 )
@@ -1030,6 +1045,7 @@ WELC_HELP_TXT = (
     " • `{mention}`*:* this simply *mentions* a user - tagging them with their first name.\n"
     " • `{id}`*:* this represents the user's *id*\n"
     " • `{count}`*:* this represents the user's *member number*.\n"
+    " • `{time}`*:* this represents the current time *when member joined*.\n"
     " • `{chatname}`*:* this represents the *current chat name*.\n"
     "\nEach variable MUST be surrounded by `{}` to be replaced.\n"
     "Welcome messages also support markdown, so you can make any elements bold/italic/code/links. "
