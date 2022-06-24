@@ -65,6 +65,7 @@ tswift
 #profanity (Credits to Julia)
 better_profanity
 nudepy
+gpytranslate
 img2pdf
 aiofiles
 wget
