@@ -22,8 +22,7 @@ from WolfXRobot.modules.helper_funcs.chat_status import user_admin, user_admin_n
 from WolfXRobot import dispatcher, updater, SUPPORT_CHAT
 from WolfXRobot.modules.log_channel import gloggable
 
-
-@run_async
+ 
 @user_admin_no_reply
 @gloggable
 def kukirm(update: Update, context: CallbackContext) -> str:
@@ -38,18 +37,17 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             is_kuki = sql.rem_kuki(user_id)
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
-                f"WolfXRobot AI Disabled\n"
+                f"Athena AI Disabled\n"
                 f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             )
         else:
             update.effective_message.edit_text(
-                "WolfXRobot Chatbot Disable By {}.".format(mention_html(user.id, user.first_name)),
+                "Athena Chatbot Disable By {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
     return ""
 
-@run_async
 @user_admin_no_reply
 @gloggable
 def kukiadd(update: Update, context: CallbackContext) -> str:
@@ -64,18 +62,17 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             is_kuki = sql.set_kuki(user_id)
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
-                f"AI Enable\n"
+                f"Athena AI Enable\n"
                 f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             )
         else:
             update.effective_message.edit_text(
-                "WolfXRobot Chatbot Enable By {}.".format(mention_html(user.id, user.first_name)),
+                "Athena Chatbot Enable By {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
     return ""
 
-@run_async
 @user_admin
 @gloggable
 def kuki(update: Update, context: CallbackContext):
@@ -98,7 +95,7 @@ def kuki(update: Update, context: CallbackContext):
 
 def kuki_message(context: CallbackContext, message):
     reply_message = message.reply_to_message
-    if message.text.lower() == "kuki":
+    if message.text.lower() == "Athena":
         return True
     if reply_message:
         if reply_message.from_user.id == context.bot.get_me().id:
@@ -107,7 +104,7 @@ def kuki_message(context: CallbackContext, message):
         return False
         
 
-def chatbot(update: Update, context: CallbackContext):
+def addchat(update: Update, context: CallbackContext):
     message = update.effective_message
     chat_id = update.effective_chat.id
     bot = context.bot
@@ -128,7 +125,7 @@ def chatbot(update: Update, context: CallbackContext):
 
 def list_all_chats(update: Update, context: CallbackContext):
     chats = sql.get_all_kuki_chats()
-    text = "<b>WolfXRobot Enabled Chats</b>\n"
+    text = "<b>Athena Enabled Chats</b>\n"
     for chat in chats:
         try:
             x = context.bot.get_chat(int(*chat))
@@ -140,21 +137,13 @@ def list_all_chats(update: Update, context: CallbackContext):
             sleep(e.retry_after)
     update.effective_message.reply_text(text, parse_mode="HTML")
 
-__help__= f"""
-*WolfXRobot AI * 
-/chatbot : Enables and Disables kazuko AI Chat mode (EXCLUSIVE)
-*Powered by* : [WolfXRobot Chatbot](https://github.com/MoeZilla/KukiChatbot)
-"""
 
-__mod_name__ = "Cʜᴀᴛʙᴏᴛ🤖"
-
-
-CHATBOTK_HANDLER = CommandHandler("chatbot", kuki)#, run_async=True)
+CHATBOTK_HANDLER = CommandHandler("addchat", kuki)#, run_async=True)
 ADD_CHAT_HANDLER = CallbackQueryHandler(kukiadd, pattern=r"add_chat")
 RM_CHAT_HANDLER = CallbackQueryHandler(kukirm, pattern=r"rm_chat")
 CHATBOT_HANDLER = MessageHandler(
     Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
-                    & ~Filters.regex(r"^\/")), chatbot)
+                    & ~Filters.regex(r"^\/")), addchat)
 LIST_ALL_CHATS_HANDLER = CommandHandler(
     "allchats", list_all_chats, filters=CustomFilters.dev_filter)
 
@@ -171,3 +160,4 @@ __handlers__ = [
     LIST_ALL_CHATS_HANDLER,
     CHATBOT_HANDLER,
 ]
+
