@@ -1,4 +1,4 @@
-from wolfXRobot import pbot as bot
+from WolfXRobot import pbot as bot
 from pyrogram import filters
 from gpytranslate import Translator
 
