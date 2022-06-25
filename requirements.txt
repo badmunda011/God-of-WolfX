@@ -73,4 +73,4 @@ pendulum
 nekos.py
 opencv-python-headless
 python-arq
-
+gpytranslate
