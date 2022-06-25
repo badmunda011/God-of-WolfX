@@ -23,7 +23,7 @@ trans = Translator()
 
 
 @bot.on_message(filters.command(["tl", "tr"]))
-async def translate(_, message: Message) -> None:
+async def translate(_, message):
     reply_msg = message.reply_to_message
     if not reply_msg:
         await message.reply_text("Reply to a message to translate it!\n Use: /langs for translation codes")
