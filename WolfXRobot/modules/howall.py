@@ -1,5 +1,6 @@
 
 import random, requests, time
+from WolfXRobot import bot
 from telethon import Button, events
 from WolfXRobot.events import register
 from pyrogram import filters
