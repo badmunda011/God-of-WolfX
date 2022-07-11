@@ -156,7 +156,12 @@ Example:
 In this Howell show you possibltly!
 horny:gay:lezbian:boobs:cock:cute
 Example:
-➢ /horny: reply to someone or it self show how horny!
+➢ /horny : reply to someone or it self show how horny!
+➢ /gay : Reply To your Friends 🤣
+➢ /cute : Check Your Cute % or GF Cute % 🤣
+➢ /cock : Check Your Friend Cock Size 🍌
+➢ /boobs : Check Your GF Boobs Size 🍒
+
 """
 
-__mod_name__ = "ʜᴏᴡᴀʟʟ"
+__mod_name__ = "Hᴏᴡᴀʟʟ👻"
