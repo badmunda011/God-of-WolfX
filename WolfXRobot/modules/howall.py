@@ -37,7 +37,7 @@ BIGBALL = "https://i.gifer.com/8ZUg.gif"
 LANG = "https://telegra.ph/file/423414459345bf18310f5.gif"
 CUTIE = "https://64.media.tumblr.com/d701f53eb5681e87a957a547980371d2/tumblr_nbjmdrQyje1qa94xto1_500.gif"
 
-@asst.on(events.NewMessage(pattern="/horny ?(.*)"))
+@pbot.on_message(filters.command("horny"))
 async def horny(e):
          if not e.is_reply:
               user_id = e.sender.id
@@ -55,7 +55,7 @@ async def horny(e):
                HORNY = f"**🔥** {mention} **Is** {mm}**% Horny!**"
                await e.reply(HORNY, buttons=BUTTON, file=HOT)
 
-@asst.on(events.NewMessage(pattern="/gay ?(.*)"))
+@pbot.on_message(filters.command("gay"))
 async def gay(e):
          if not e.is_reply:
               user_id = e.sender.id
@@ -73,7 +73,7 @@ async def gay(e):
                GAY = f"**🏳‍🌈** {mention} **Is** {mm}**% Gay!**"
                await e.reply(GAY, buttons=BUTTON, file=SMEXY)
 
-@asst.on(events.NewMessage(pattern="/lezbian ?(.*)"))
+@pbot.on_message(filters.command("lezbian"))
 async def lezbian(e):
          if not e.is_reply:
               user_id = e.sender.id
@@ -91,7 +91,7 @@ async def lezbian(e):
                FEK = f"**💜** {mention} **Is** {mm}**% Lezbian!**"
                await e.reply(FEK, buttons=BUTTON, file=LEZBIAN)
 
-@asst.on(events.NewMessage(pattern="/boobs ?(.*)"))
+@pbot.on_message(filters.command("boobs"))
 async def boobs(e):
          if not e.is_reply:
               user_id = e.sender.id
@@ -109,7 +109,7 @@ async def boobs(e):
                BOOBS = f"**🍒** {mention}**'s Boobs Size Is** {mm}**!**"
                await e.reply(BOOBS, buttons=BUTTON, file=BIGBALL)
 
-@asst.on(events.NewMessage(pattern="/cock ?(.*)"))
+@pbot.on_message(filters.command("cock"))
 async def cock(e):
          if not e.is_reply:
               user_id = e.sender.id
@@ -127,7 +127,7 @@ async def cock(e):
                COCK = f"**🍆** {mention}**'s Cock Size Is** {mm}**cm**"
                await e.reply(COCK, buttons=BUTTON, file=LANG)
 
-@asst.on(events.NewMessage(pattern="/cute ?(.*)"))
+@pbot.on_message(filters.command("cute"))
 async def cute(e):
          if not e.is_reply:
               user_id = e.sender.id
