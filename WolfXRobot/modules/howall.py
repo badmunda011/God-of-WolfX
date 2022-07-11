@@ -8,7 +8,7 @@ from pyrogram.types import *
 
 
 #credits to t.me/HMF_Owner_1
-@bot.on_message(filters.command("wish"))
+@app.on_message(filters.command("wish"))
 async def wish(_, m):
             if len(m.command) <  2:
                   await m.reply("😉 ~~**Add~~ wish!**")
