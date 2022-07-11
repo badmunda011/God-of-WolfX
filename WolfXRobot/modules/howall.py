@@ -152,15 +152,14 @@ You having any kind of
 Example:
 ➢ /wish I want class topper 😌
 ➢ /wish I want a new iphone 😜
-❓ What is This (howall):
-In this Howell show you possibltly!
-horny:gay:lezbian:boobs:cock:cute
-Example:
+❓ What Are They cmds (howall):
+ commands:
 ➢ /horny : reply to someone or it self show how horny!
-➢ /gay : Reply To your Friends 🤣
+➢ /gay : Reply To your Friends 🥵
 ➢ /cute : Check Your Cute % or GF Cute % 🤣
 ➢ /cock : Check Your Friend Cock Size 🍌
 ➢ /boobs : Check Your GF Boobs Size 🍒
+➢ /lezbian : Check your GF lezbian 💜
 
 """
 
