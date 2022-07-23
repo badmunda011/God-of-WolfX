@@ -19,6 +19,7 @@ class Config(object):
     SUPPORT_CHAT = 'Thanimaisupport'
     JOIN_LOGGER = -1001739802989
     EVENT_LOGS = -1001739802989
+    REM_BG_API_KEY = "dxsh728mZMDmj4ijSZCNPZig"
 
     ALLOW_CHATS = "True"
     SQLALCHEMY_DATABASE_URI = 'ELEPHAT OR HEROKU DB URL'  
