@@ -86,6 +86,7 @@ if ENV:
 
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get('TEMP_DOWNLOAD_DIRECTORY', None)
     INFOPIC = bool(os.environ.get('INFOPIC', False))
+    REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
     EVENT_LOGS = os.environ.get('EVENT_LOGS', None)
     WEBHOOK = bool(os.environ.get('WEBHOOK', False))
     URL = os.environ.get('URL', "")  # Does not contain token
@@ -188,6 +189,7 @@ else:
     SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
     SPAMWATCH_API = Config.SPAMWATCH_API
     INFOPIC = Config.INFOPIC
+    REM_BG_API_KEY = Config.REM_BG_API_KEY
     TOKEN = Config.TOKEN
     ARQ_API = Config.ARQ_API_KEY
     ARQ_API_URL = Config.ARQ_API_URL
