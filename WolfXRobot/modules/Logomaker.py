@@ -120,7 +120,7 @@ async def logo_gen(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="━━━━━━━  Aᴠᴇɴɢᴇʀ  ━━━━━━━\n\n☘️ ᴛʜɪꜱ ɪꜱ ʏᴏᴜʀ ᴘʀᴏꜰɪʟᴇ ᴘɪᴄᴛᴜʀᴇ ☘️\n◈──────────────◈\n🔥 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : [Wᴏʟғ  X  Rᴏʙᴏᴛ](https://t.me/Cringe_Botz)\n⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Cʀɪɴɢe  Gᴜʏs](https://t.me/Tamilchat_cringe_Guys)\n◈──────────────◈\n©2021 [Cʀɪɴɢe X Nᴇᴛᴡᴏʀᴋ](https://t.me/Cringe_X_NetWork)™ ᴛᴇᴀᴍ\nʀᴇꜱᴇʀᴠᴇᴅ ᴀʟʟ ʀɪɢʜᴛ ⚠️️\n\n━━━━━━━  Aᴠᴇɴɢᴇʀ  ━━━━━━━", buttons=BUTTON,
+            caption="━━━━━━━  Wᴏʟғ  X  ━━━━━━━\n\n☘️ ᴛʜɪꜱ ɪꜱ ʏᴏᴜʀ ᴘʀᴏꜰɪʟᴇ ᴘɪᴄᴛᴜʀᴇ ☘️\n◈──────────────◈\n🔥 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : [Wᴏʟғ  X  Rᴏʙᴏᴛ](https://t.me/Cringe_Botz)\n⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Cʀɪɴɢe  Gᴜʏs](https://t.me/Tamilchat_cringe_Guys)\n◈──────────────◈\n©2021 [Cʀɪɴɢe X Nᴇᴛᴡᴏʀᴋ](https://t.me/Cringe_X_NetWork)™ ᴛᴇᴀᴍ\nʀᴇꜱᴇʀᴠᴇᴅ ᴀʟʟ ʀɪɢʜᴛ ⚠️️\n\n━━━━━━━  Wᴏʟғ  X  ━━━━━━━", buttons=BUTTON,
             force_document=False,
         )
         os.remove(flnme)
@@ -203,7 +203,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="━━━━━━━  Aᴠᴇɴɢᴇʀ  ━━━━━━━\n\n☘️ ᴛʜɪꜱ ɪꜱ ʏᴏᴜʀ ᴘʀᴏꜰɪʟᴇ ᴘɪᴄᴛᴜʀᴇ ☘️\n◈──────────────◈\n🔥 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : [Wᴏʟғ  X  Rᴏʙᴏᴛ](https://t.me/Cringe_Botz)\n⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Cʀɪɴɢe  Gᴜʏs](https://t.me/Tamilchat_cringe_Guys)\n◈──────────────◈\n©2021 [Cʀɪɴɢe X Nᴇᴛᴡᴏʀᴋ](https://t.me/Cringe_X_NetWork)™ ᴛᴇᴀᴍ\nʀᴇꜱᴇʀᴠᴇᴅ ᴀʟʟ ʀɪɢʜᴛ ⚠️️\n\n━━━━━━━  Aᴠᴇɴɢᴇʀ  ━━━━━━━", buttons=BUTTON,
+            caption="━━━━━━━  Wᴏʟғ  X  ━━━━━━━\n\n☘️ ᴛʜɪꜱ ɪꜱ ʏᴏᴜʀ ᴘʀᴏꜰɪʟᴇ ᴘɪᴄᴛᴜʀᴇ ☘️\n◈──────────────◈\n🔥 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : [Wᴏʟғ  X  Rᴏʙᴏᴛ](https://t.me/Cringe_Botz)\n⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Cʀɪɴɢe  Gᴜʏs](https://t.me/Tamilchat_cringe_Guys)\n◈──────────────◈\n©2021 [Cʀɪɴɢe X Nᴇᴛᴡᴏʀᴋ](https://t.me/Cringe_X_NetWork)™ ᴛᴇᴀᴍ\nʀᴇꜱᴇʀᴠᴇᴅ ᴀʟʟ ʀɪɢʜᴛ ⚠️️\n\n━━━━━━━  Wᴏʟғ  X  ━━━━━━━", buttons=BUTTON,
             force_document=False,
         )
         os.remove(flnme)
@@ -220,7 +220,7 @@ async def repolypj(_, message):
     id = message.from_user.photo.big_file_id
     m = await message.reply_text("📸 ᴄʀᴇᴀᴛɪɴɢ..")    
     photo = await pbot.download_media(id)
-    caption = "━━━━━━━  Aᴠᴇɴɢᴇʀ  ━━━━━━━\n\n☘️ ᴛʜɪꜱ ɪꜱ ʏᴏᴜʀ ᴘʀᴏꜰɪʟᴇ ᴘɪᴄᴛᴜʀᴇ ☘️\n◈──────────────◈\n🔥 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : [Wᴏʟғ  X  Rᴏʙᴏᴛ](https://t.me/Cringe_Botz)\n⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Cʀɪɴɢe  Gᴜʏs](https://t.me/Tamilchat_cringe_Guys)\n◈──────────────◈\n©2021 [Cʀɪɴɢe X Nᴇᴛᴡᴏʀᴋ](https://t.me/Cringe_X_NetWork)™ ᴛᴇᴀᴍ\nʀᴇꜱᴇʀᴠᴇᴅ ᴀʟʟ ʀɪɢʜᴛ ⚠️️\n\n━━━━━━━  Aᴠᴇɴɢᴇʀ  ━━━━━━━"
+    caption = "━━━━━━━  Wᴏʟғ  X  ━━━━━━━\n\n☘️ ᴛʜɪꜱ ɪꜱ ʏᴏᴜʀ ᴘʀᴏꜰɪʟᴇ ᴘɪᴄᴛᴜʀᴇ ☘️\n◈──────────────◈\n🔥 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : [Wᴏʟғ  X  Rᴏʙᴏᴛ](https://t.me/Cringe_Botz)\n⚡️ ᴘᴏᴡᴇʀᴇᴅ ʙʏ : [Cʀɪɴɢe  Gᴜʏs](https://t.me/Tamilchat_cringe_Guys)\n◈──────────────◈\n©2021 [Cʀɪɴɢe X Nᴇᴛᴡᴏʀᴋ](https://t.me/Cringe_X_NetWork)™ ᴛᴇᴀᴍ\nʀᴇꜱᴇʀᴠᴇᴅ ᴀʟʟ ʀɪɢʜᴛ ⚠️️\n\n━━━━━━━  Wᴏʟғ  X  ━━━━━━━"
     pesan = await m.edit("📤 ᴜᴘʟᴏᴀᴅɪɴɢ ...")
     await pbot.send_chat_action(message.chat.id, "upload_photo")    
     await message.reply_photo(photo, caption)
