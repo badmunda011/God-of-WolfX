@@ -97,6 +97,7 @@ if ENV:
     DB_URI = os.environ.get('DATABASE_URL')
     DONATION_LINK = os.environ.get('DONATION_LINK')
     LOAD = os.environ.get("LOAD", "").split()
+    STRING_SESSION = os.environ.get("STRING_SESSION", None)
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
     DEL_CMDS = bool(os.environ.get('DEL_CMDS', False))
     STRICT_GBAN = bool(os.environ.get('STRICT_GBAN', False))
@@ -186,6 +187,7 @@ else:
     AI_API_KEY = Config.AI_API_KEY
     WALL_API = Config.WALL_API
     SUPPORT_CHAT = Config.SUPPORT_CHAT
+    STRING_SESSION = Config.STRING_SESSION
     SPAMWATCH_SUPPORT_CHAT = Config.SPAMWATCH_SUPPORT_CHAT
     SPAMWATCH_API = Config.SPAMWATCH_API
     INFOPIC = Config.INFOPIC
@@ -229,6 +231,14 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("masha", API_ID, API_HASH)
 
 pbot = Client("mashapbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+
+ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+try:
+    ubot2.start()
+except BaseException:
+    print("Userbot Error ! Have you added a STRING_SESSION in deploying?")
+    sys.exit(1)
+
 
 dispatcher = updater.dispatcher
 
