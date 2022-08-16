@@ -16,6 +16,8 @@ import telegram.ext as tg
 
 from telethon.sessions import StringSession
 
+from telethon.sessions import MemorySession
+
 from pyrogram import Client, errors
 
 from telethon import TelegramClient
@@ -243,6 +245,7 @@ except BaseException:
 
 
 dispatcher = updater.dispatcher
+telethn = TelegramClient(MemorySession(), API_ID, API_HASH)
 
 print("[INFO]: INITIALIZING AIOHTTP SESSION")
 aiohttpsession = ClientSession()
