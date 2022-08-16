@@ -20,3 +20,10 @@ async def _(event):
             await msg.edit("Boss! Please Unblock @SpamBot ")
             return
         await msg.edit(f"~ {response.message.message}")
+
+__help__ = """
+*Admins Only Command*
+/delall : Reply with message from where all messages should be deleted
+*NOTE: Purge can only delete messages sent with 24 hours and purge can only delete 100 messages in single time but /delall can delete whole messages from the starting*
+"""
+__mod_name__ = "SᴘᴀᴍCʜᴇᴄᴋᴇʀ❌"
