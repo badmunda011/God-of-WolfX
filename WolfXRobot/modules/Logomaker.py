@@ -228,7 +228,7 @@ async def repolypj(_, message):
     os.remove(photo)
 
 
-__mod_name__ = "Lᴏɢᴏ"
+__mod_name__ = "Lᴏɢᴏ💖"
 
 __help__ = """
 *User Commands :*
