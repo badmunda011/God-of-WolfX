@@ -116,6 +116,13 @@
 
       },
 
+      "STRING_SESSION": {
+         "description": "Fill with telethon string session.",
+         "required": true,
+         "value": "" 
+
+      },
+
       "HEROKU_API_KEY": {
 
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
