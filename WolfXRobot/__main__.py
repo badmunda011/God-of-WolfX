@@ -115,21 +115,21 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
+            text="➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕", url="t.me/WolfXRobot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
-            text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="wolf_"),
+            text="📚 Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs 📚", callback_data="wolf_"),
     ],
     [
         InlineKeyboardButton(
-            text="🧨ѕυρρ๏яτ🎈", callback_data="wolf_support"),
+            text="🚨 Sᴜᴘᴘᴏʀᴛ", callback_data="wolf_support"),
         InlineKeyboardButton(
-            text="🎀αɓουτ🔎", callback_data="about_"),
+            text="Aʙᴏᴜᴛ 🌐", callback_data="about_"),
     ],
     [
         InlineKeyboardButton(
-            text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1"
+            text="👑 Oᴡɴᴇʀ Oғ Wᴏʟғ X 👑", url="https://t.me/HMF_OWNER_1"
     ),
     ],
 ]
