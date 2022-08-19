@@ -852,10 +852,10 @@ Support
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/PlayBoysDXD"),                           
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/Glaston_Knights_Union")],
+                 [InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/TamilChat_CRINGE_GUYS"),                           
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/Cringe_BoTZ")],
                     [InlineKeyboardButton(text="Mᴏᴠɪᴇs", url=f"https://t.me/+uzQ0M7QIQeQ2NWI9"),
-                     InlineKeyboardButton(text="Lᴏɢs", url=f"https://t.me/KawaiiXLogs")],
+                     InlineKeyboardButton(text="Lᴏɢs", url=f"https://t.me/Cringe_Guys_logs")],
                     [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_")],
                  ]
             ),
