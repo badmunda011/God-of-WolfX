@@ -774,6 +774,27 @@ wolf has a additional feature for non-admin users who want to use admin commands
                 [[InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="wolf_music")]]
             ),
         )
+    elif query.data == "wolf_credit":
+        query.message.edit_caption(
+            caption="""━━━━━━━ *ᴀᴠᴇɴɢᴇʀ* ━━━━━━━"
+            "\n🛡️ *ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴀᴠᴇɴɢᴇʀ ʀᴏʙᴏᴛ* 🛡️"
+            "\n\nʜᴇʀᴇ ɪꜱ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴀɴᴅ"
+            "\nꜱᴘᴏɴꜱᴏʀ ᴏꜰ [ᴀᴠᴇɴɢᴇʀ ʀᴏʙᴏᴛ](t.me/AvengerBot)"
+            "\n\nʜᴇ ꜱᴘᴇɴᴛ ᴀ ʟᴏᴛ ᴏꜰ ᴛɪᴍᴇ ꜰᴏʀ"
+            "\nᴍᴀᴋɪɴɢ [ᴀᴠᴇɴɢᴇʀ ʀᴏʙᴏᴛ](t.me/AvengerBot) ᴀ"
+            "\nꜱᴜᴘᴇʀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ!""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                      [[InlineKeyboardButton(text="🏡", callback_data="wolf_back"),
+                        InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
+                        InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
+                        InlineKeyboardButton(text="🧑‍💻", callback_data="source_"),
+                        InlineKeyboardButton(text="🖥️", callback_data="help_back")],
+                       [InlineKeyboardButton(text="ᴍᴜᴋᴇꜱʜ", url="https://t.me/HMF_Owner_1"),
+                        InlineKeyboardButton(text="ʙᴏᴛꜱ ᴄʟᴜʙ", url="https://t.me/TamilChat_Cringe_Guys")]]
+            ),
+        )
     elif query.data == "wolf_about":
         query.message.edit_caption(
             caption= """WolfXRobot it's online since January 2022 and it's constantly updated!
