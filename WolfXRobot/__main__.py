@@ -1002,7 +1002,7 @@ DOWNVOTE - Use downvote keywords like "-", "-1", etc to downvote a cb.message.
                         InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
                         InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
                         InlineKeyboardButton(text="🧑‍💻", callback_data="wolf_source"),
-                        InlineKeyboardButton(text="🖥️", callback_data="help_back"),
+                        InlineKeyboardButton(text="🖥️", callback_data="help_back")],
                        [InlineKeyboardButton(text="📄Rᴇᴘᴏ Pʀɪᴠᴀᴛᴇ ", url="https://github.com/Thiruselvan999/God-of-wolf-new")]]
             ),
         )
