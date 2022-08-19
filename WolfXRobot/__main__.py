@@ -492,16 +492,13 @@ def wolf_callback_handler(update, context):
     elif query.data == "wolf_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
-        query.message.edit_caption(
-                photo=random.choice(AASF),
-                caption=PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    sql.num_users(),
-                    sql.num_chats()),
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
-                disable_web_page_preview=False,
+        photo=random.choice(AASF),
+        query.message.edit_text(
+            PM_START_TEXT.format(sql.num_users(), sql.num_chats()),
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            timeout=60,
         )
     elif query.data == "wolf_help":
         query.message.edit_caption(
