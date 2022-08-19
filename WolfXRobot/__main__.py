@@ -594,9 +594,9 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
             ),
         )
     elif query.data == "wolf_start":
-        query.message.edit_caption(
-            
-caption="""     Whassup {}** ー(  ° v ° )ﾉ  
+        first_name = update.effective_user.first_name
+          update.effective_message.reply_photo(
+          photo=random.choice(AASF), caption="""     Whassup {}** ー(  ° v ° )ﾉ  
 ───────────────────────
 × I'ᴍ ωοℓƒ ✗ Aɴɪᴍᴇ - Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ
 × I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!
@@ -610,9 +610,8 @@ caption="""     Whassup {}** ー(  ° v ° )ﾉ
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-              [
+                reply_markup=InlineKeyboardMarkup(
+                 [
                 [InlineKeyboardButton(text="🏡", callback_data="wolf_back"),
                  InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
                  InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
@@ -623,8 +622,10 @@ caption="""     Whassup {}** ー(  ° v ° )ﾉ
                 [InlineKeyboardButton(text="🚨 Sᴜᴘᴘᴏʀᴛ", callback_data="wolf_support"),
                  InlineKeyboardButton(text="Aʙᴏᴜᴛ 🌐", callback_data="about_")],
                 [InlineKeyboardButton(text="👑 Oᴡɴᴇʀ Oғ Wᴏʟғ X 👑", url="https://t.me/HMF_OWNER_1")]]
-     ),
-  )
+                  ]
+              ),
+                parse_mode=ParseMode.MARKDOWN,              
+            )
     elif query.data == "wolf_term":
         query.message.edit_caption(
            caption="""✗ *Terms and Conditions:*
