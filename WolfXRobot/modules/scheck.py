@@ -21,10 +21,3 @@ async def _(event):
             return
         await msg.edit(f"~ {response.message.message}")
 
-__help__ = """
-*Spam Checker🥳*
-/scheck - Check if your Spam Or Not 🥳 
-
-Cridets To @HMF_Owner_1
-"""
-__mod_name__ = "SᴘᴀᴍCʜᴇᴄᴋᴇʀ❌"
