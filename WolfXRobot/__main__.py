@@ -485,7 +485,7 @@ def wolf_callback_handler(update, context):
                     [InlineKeyboardButton(text="Hᴏᴡ Tᴏ Usᴇ Mᴇ ❓", callback_data="wolf_help"),                           
                      InlineKeyboardButton(text="Mᴜsɪᴄ Hᴇʟᴘ 🎧", callback_data="wolf_music")],
                     [InlineKeyboardButton(text="Fᴜɴ Tᴏᴏʟs ⚙", callback_data="wolf_tools"),
-                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="wolf_back")],
+                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="wolf_start")],
                 ]
             ),
         )
@@ -606,7 +606,7 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                  [
-                [InlineKeyboardButton(text="🏡", callback_data="wolf_back"),
+                [InlineKeyboardButton(text="🏡", callback_data="wolf_start"),
                  InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
                  InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
                  InlineKeyboardButton(text="🧑‍💻", callback_data="wolf_source"),
@@ -808,7 +808,7 @@ wolf has a additional feature for non-admin users who want to use admin commands
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                      [[InlineKeyboardButton(text="🏡", callback_data="wolf_back"),
+                      [[InlineKeyboardButton(text="🏡", callback_data="wolf_start"),
                         InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
                         InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
                         InlineKeyboardButton(text="🧑‍💻", callback_data="wolf_source"),
@@ -904,7 +904,7 @@ Click on below buttons and check amazing tools for users.*""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                      [[InlineKeyboardButton(text="🏡", callback_data="wolf_back"),
+                      [[InlineKeyboardButton(text="🏡", callback_data="wolf_start"),
                         InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
                         InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
                         InlineKeyboardButton(text="🧑‍💻", callback_data="wolf_source"),
@@ -999,9 +999,13 @@ DOWNVOTE - Use downvote keywords like "-", "-1", etc to downvote a cb.message.
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="📄Rᴇᴘᴏ Pʀɪᴠᴀᴛᴇ ", url="https://github.com/Thiruselvan999/God-of-Wolf-New"),
-                 ]
+                      [[InlineKeyboardButton(text="🏡", callback_data="wolf_start"),
+                        InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
+                        InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
+                        InlineKeyboardButton(text="🧑‍💻", callback_data="wolf_source"),
+                        InlineKeyboardButton(text="🖥️", callback_data="help_back"),
+                       [InlineKeyboardButton(text="📄Rᴇᴘᴏ Pʀɪᴠᴀᴛᴇ ", url="https://github.com/Thiruselvan999/God-of-Wolf-New"),
+                    ]
                 ]
             ),
         )
