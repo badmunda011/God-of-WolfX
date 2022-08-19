@@ -609,6 +609,7 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
                     escape_markdown(uptime),
                     sql.num_users(),
                     sql.num_chats()),
+                    parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                  [
                 [InlineKeyboardButton(text="🏡", callback_data="wolf_back"),
@@ -621,10 +622,8 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
                 [InlineKeyboardButton(text="🚨 Sᴜᴘᴘᴏʀᴛ", callback_data="wolf_support"),
                  InlineKeyboardButton(text="Aʙᴏᴜᴛ 🌐", callback_data="about_")],
                 [InlineKeyboardButton(text="👑 Oᴡɴᴇʀ Oғ Wᴏʟғ X 👑", url="https://t.me/HMF_OWNER_1")]]
-                  ]
-              ),
-                parse_mode=ParseMode.MARKDOWN,              
-            )
+           ),
+        )
     elif query.data == "wolf_term":
         query.message.edit_caption(
            caption="""✗ *Terms and Conditions:*
