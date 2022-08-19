@@ -605,10 +605,8 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
 ───────────────────────
 × Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ!
 ───────────────────────""",
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),
-                    parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                  [
                 [InlineKeyboardButton(text="🏡", callback_data="wolf_back"),
