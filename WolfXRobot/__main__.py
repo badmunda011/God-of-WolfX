@@ -354,12 +354,16 @@ def start(update: Update, context: CallbackContext):
                     sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(
                  [
-                  [InlineKeyboardButton(text="☑️ฬ๏lŦ ✗ t๏ ץ๏ยг Gɾ๏υρ☑️", url="t.me/WolfXRobot?startgroup=true"),
-                    ],                           
-                    [InlineKeyboardButton(text="⚡нєℓρ & ϲοммєиτѕ🌟", callback_data="wolf_")],
-                    [InlineKeyboardButton(text="🧨ѕυρρ๏яτ🎈", callback_data="wolf_support"),
-                     InlineKeyboardButton(text="🎀αɓουτ🔎", callback_data="about_")],
-                    [InlineKeyboardButton(text="👑οωиєя🦁", url="https://t.me/HMF_OWNER_1")],
+                   [InlineKeyboardButton(text="🏡", callback_data="wolf_start"),
+                    InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
+                    InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
+                    InlineKeyboardButton(text="🧑‍💻", callback_data="wolf_source"),
+                    InlineKeyboardButton(text="🖥️", callback_data="help_back")],
+                   [InlineKeyboardButton(text="➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕", url="t.me/WolfXRobot?startgroup=true")],                           
+                   [InlineKeyboardButton(text="📚 Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs 📚", callback_data="wolf_")],
+                   [InlineKeyboardButton(text="🚨 Sᴜᴘᴘᴏʀᴛ", callback_data="wolf_support"),
+                    InlineKeyboardButton(text="Aʙᴏᴜᴛ 🌐", callback_data="about_")],
+                   [InlineKeyboardButton(text="👑 Oᴡɴᴇʀ Oғ Wᴏʟғ X 👑", url="https://t.me/HMF_OWNER_1")],
                   ]
               ),
                 parse_mode=ParseMode.MARKDOWN,              
