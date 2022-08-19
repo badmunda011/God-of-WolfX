@@ -817,8 +817,8 @@ wolf has a additional feature for non-admin users who want to use admin commands
                         InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
                         InlineKeyboardButton(text="🧑‍💻", callback_data="wolf_source"),
                         InlineKeyboardButton(text="🖥️", callback_data="help_back")],
-                       [InlineKeyboardButton(text="ᴍᴜᴋᴇꜱʜ", url="https://t.me/HMF_Owner_1"),
-                        InlineKeyboardButton(text="ʙᴏᴛꜱ ᴄʟᴜʙ", url="https://t.me/TamilChat_Cringe_Guys")]]
+                       [InlineKeyboardButton(text="Hᴀᴄᴋᴇʀ", url="https://t.me/HMF_Owner_1"),
+                        InlineKeyboardButton(text="Cʀɪɴɢᴇ  Bᴏᴛᴢ", url="https://t.me/Cringe_Botz")]]
             ),
         )
     elif query.data == "wolf_about":
