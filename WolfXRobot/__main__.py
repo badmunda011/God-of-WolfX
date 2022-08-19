@@ -842,10 +842,10 @@ Click on below buttons and check amazing tools for users.*""",
         )
     elif query.data == "wolf_admin":
         query.message.edit_caption(
-            caption="""━━━━━━━ *ᴀᴠᴇɴɢᴇʀ* ━━━━━━━"
+            caption="""━━━━━━━ *ᴡᴏʟғ  x* ━━━━━━━"
             "\n*ᴍᴀᴋᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇꜰꜰᴇᴄᴛɪᴠᴇ ɴᴏᴡ :*"
             "\n🎉 ᴄᴏɴɢʀᴀɢᴜʟᴀᴛɪᴏɴꜱ 🎉"
-            "\n[ᴀᴠᴇɴɢᴇʀ ʀᴏʙᴏᴛ](t.me/WolfXRobot) ɴᴏᴡ ʀᴇᴀᴅʏ ᴛᴏ"
+            "\n[ᴡᴏʟғ  x ʀᴏʙᴏᴛ](t.me/WolfXRobot) ɴᴏᴡ ʀᴇᴀᴅʏ ᴛᴏ"
             "\nᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ."
             "\n\n*ᴀᴅᴍɪɴ ᴛᴏᴏʟꜱ :*"
             "\nʙᴀꜱɪᴄ ᴀᴅᴍɪɴ ᴛᴏᴏʟꜱ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ"
