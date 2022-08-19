@@ -114,6 +114,13 @@ PM_START_TEXT = """
 
 buttons = [
     [
+        InlineKeyboardButton(text="🏡", callback_data="wolf_back"),
+        InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
+        InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
+        InlineKeyboardButton(text="🧑‍💻", callback_data="source_"),
+        InlineKeyboardButton(text="🖥️", callback_data="help_back"),
+    ],
+    [
         InlineKeyboardButton(
             text="➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕", url="t.me/WolfXRobot?startgroup=true"),
     ],
@@ -830,6 +837,36 @@ Click on below buttons and check amazing tools for users.*""",
                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="wolf_"),
                  
                  ]
+                ]
+            ),
+        )
+    elif query.data == "wolf_admin":
+        query.message.edit_caption(
+            caption="""━━━━━━━ *ᴀᴠᴇɴɢᴇʀ* ━━━━━━━"
+            "\n*ᴍᴀᴋᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇꜰꜰᴇᴄᴛɪᴠᴇ ɴᴏᴡ :*"
+            "\n🎉 ᴄᴏɴɢʀᴀɢᴜʟᴀᴛɪᴏɴꜱ 🎉"
+            "\n[ᴀᴠᴇɴɢᴇʀ ʀᴏʙᴏᴛ](t.me/WolfXRobot) ɴᴏᴡ ʀᴇᴀᴅʏ ᴛᴏ"
+            "\nᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ."
+            "\n\n*ᴀᴅᴍɪɴ ᴛᴏᴏʟꜱ :*"
+            "\nʙᴀꜱɪᴄ ᴀᴅᴍɪɴ ᴛᴏᴏʟꜱ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ"
+            "\nᴘʀᴏᴛᴇᴄᴛ & ᴘᴏᴡᴇʀᴜᴘ ʏᴏᴜʀ ɢʀᴏᴜᴘ."
+            "\nʏᴏᴜ ᴄᴀɴ *ʙᴀɴ*, *ᴋɪᴄᴋ*, *ᴘʀᴏᴍᴏᴛᴇ*"
+            "\nᴍᴇᴍʙᴇʀꜱ ᴀꜱ ᴀᴅᴍɪɴ ᴛʜʀᴏᴜɢʜ ʙᴏᴛ."
+            "\n\n*ɢʀᴇᴇᴛɪɴɢꜱ :*"
+            "\nʟᴇᴛꜱ ꜱᴇᴛ ᴀ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇ ᴛᴏ"
+            "\nᴡᴇʟᴄᴏᴍᴇ ɴᴇᴡ ᴜꜱᴇʀꜱ ᴄᴏᴍɪɴɢ ᴛᴏ"
+            "\nʏᴏᴜʀ ɢʀᴏᴜᴘ."
+            "\nꜱᴇɴᴅ /setwelcome [ᴍᴇꜱꜱᴀɢᴇ] ᴛᴏ"
+            "\nꜱᴇᴛ ᴀ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇ!""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                      [[InlineKeyboardButton(text="🏡", callback_data="wolf_back"),
+                        InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
+                        InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
+                        InlineKeyboardButton(text="🧑‍💻", callback_data="source_"),
+                        InlineKeyboardButton(text="🖥️", callback_data="help_back"),
+                    ]
                 ]
             ),
         )
