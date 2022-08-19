@@ -776,13 +776,13 @@ wolf has a additional feature for non-admin users who want to use admin commands
         )
     elif query.data == "wolf_credit":
         query.message.edit_caption(
-            caption="""━━━━━━━ *ᴀᴠᴇɴɢᴇʀ* ━━━━━━━"
-            "\n🛡️ *ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴀᴠᴇɴɢᴇʀ ʀᴏʙᴏᴛ* 🛡️"
+            caption="""━━━━━━━ *Wᴏʟғ  X* ━━━━━━━"
+            "\n🛡️ *ᴄʀᴇᴅɪᴛ ꜰᴏʀ ᴡᴏʟғ  x ʀᴏʙᴏᴛ* 🛡️"
             "\n\nʜᴇʀᴇ ɪꜱ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ ᴀɴᴅ"
-            "\nꜱᴘᴏɴꜱᴏʀ ᴏꜰ [ᴀᴠᴇɴɢᴇʀ ʀᴏʙᴏᴛ](t.me/AvengerBot)"
+            "\nꜱᴘᴏɴꜱᴏʀ ᴏꜰ [ᴡᴏʟғ  x  ʀᴏʙᴏᴛ](t.me/WolfXRoBot)"
             "\n\nʜᴇ ꜱᴘᴇɴᴛ ᴀ ʟᴏᴛ ᴏꜰ ᴛɪᴍᴇ ꜰᴏʀ"
-            "\nᴍᴀᴋɪɴɢ [ᴀᴠᴇɴɢᴇʀ ʀᴏʙᴏᴛ](t.me/AvengerBot) ᴀ"
-            "\nꜱᴜᴘᴇʀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ!""",
+            "\nᴍᴀᴋɪɴɢ [ᴡᴏʟғ  x  ʀᴏʙᴏᴛ](t.me/WolfXRoBot) ᴀ"
+            "\nꜱᴜᴘᴇʀ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
