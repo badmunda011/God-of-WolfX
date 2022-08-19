@@ -594,9 +594,8 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
             ),
         )
     elif query.data == "wolf_start":
-        first_name = update.effective_user.first_name
-          update.effective_message.reply_photo(
-          photo=random.choice(AASF), caption="""     Whassup {}** ー(  ° v ° )ﾉ  
+          query.message.edit_caption(
+        caption="""Whassup ー(  ° v ° )ﾉ  
 ───────────────────────
 × I'ᴍ ωοℓƒ ✗ Aɴɪᴍᴇ - Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ
 × I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!
