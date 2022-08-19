@@ -998,7 +998,6 @@ DOWNVOTE - Use downvote keywords like "-", "-1", etc to downvote a cb.message.
 *Click below Button to Get Source Code.*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [
                       [[InlineKeyboardButton(text="🏡", callback_data="wolf_start"),
                         InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
                         InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
