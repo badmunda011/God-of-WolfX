@@ -114,7 +114,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="🏡", callback_data="wolf_back"),
+        InlineKeyboardButton(text="🏡", callback_data="wolf_start"),
         InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
         InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
         InlineKeyboardButton(text="🧑‍💻", callback_data="wolf_source"),
@@ -593,6 +593,38 @@ Nᴏᴛᴇ-  ɴɪɢʜᴛ  ᴍᴏᴅᴇ  ᴄʜᴀᴛs  ɢᴇᴛ  ᴀᴜᴛᴏᴍ�
                 ]
             ),
         )
+    elif query.data == "wolf_start":
+        query.message.edit_caption(
+            
+caption="""     Whassup {}** ー(  ° v ° )ﾉ  
+───────────────────────
+× I'ᴍ ωοℓƒ ✗ Aɴɪᴍᴇ - Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ
+× I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!
+───────────────────────
+**✯ Server Uptime : {}**
+**✯ {} users, across {} chats.**
+───────────────────────
+× Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ!
+───────────────────────""",format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+              [
+                [InlineKeyboardButton(text="🏡", callback_data="wolf_back"),
+                 InlineKeyboardButton(text="🛡️", callback_data="wolf_admin"),
+                 InlineKeyboardButton(text="💳", callback_data="wolf_credit"),
+                 InlineKeyboardButton(text="🧑‍💻", callback_data="wolf_source"),
+                 InlineKeyboardButton(text="🖥️", callback_data="help_back")],
+                [InlineKeyboardButton(text="➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕", url="t.me/WolfXRobot?startgroup=true")],
+                [InlineKeyboardButton(text="📚 Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs 📚", callback_data="wolf_")],
+                [InlineKeyboardButton(text="🚨 Sᴜᴘᴘᴏʀᴛ", callback_data="wolf_support"),
+                 InlineKeyboardButton(text="Aʙᴏᴜᴛ 🌐", callback_data="about_")],
+                [InlineKeyboardButton(text="👑 Oᴡɴᴇʀ Oғ Wᴏʟғ X 👑", url="https://t.me/HMF_OWNER_1")]]
+     ),
+  )
     elif query.data == "wolf_term":
         query.message.edit_caption(
            caption="""✗ *Terms and Conditions:*
