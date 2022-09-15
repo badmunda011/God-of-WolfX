@@ -19,7 +19,7 @@ zalgo-text
 geopy
 nltk
 psutil
-aiohttp>=3.7.4
+aiohttp==3.8.1
 Pillow>=8.2.0
 CurrencyConverter
 #googletrans==3.1.0a0
