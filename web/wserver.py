@@ -26,3 +26,7 @@ def status():
             'recv': recv,
         },
     }
+
+if __name__ == "main" :
+  app.run()
+
