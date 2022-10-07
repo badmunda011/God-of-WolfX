@@ -105,7 +105,11 @@ PM_START_TEXT = """
 × I'ᴍ ωοℓƒ ✗ Aɴɪᴍᴇ - Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ
 × I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!
 ───────────────────────
+**✯ Server Uptime : {}**
+**✯ {} users, across {} chats.**
+───────────────────────
 × Pᴏᴡᴇʀᴇᴅ Bʏ: 𓆩᪵𝙃𝙖𝙣𝙜ꮻ𝙫𝙚𝙧𝙭𝘿─⃛͢❜🍷!
+× ` New Patch Update Comming Soon...`
 ───────────────────────
 """
 
@@ -323,25 +327,33 @@ def start(update: Update, context: CallbackContext):
                photo=random.choice(AASF),
                caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
-                    escape_markdown(uptime),                        
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
           )
 
 
-       else:
-           first_name = update.effective_user.first_name
-           update.effective_message.reply_photo(
-            photo=random.choice(AASF), caption="""*Hᴇʟʟᴏ {} !*
+    else:
+          first_name = update.effective_user.first_name
+          update.effective_message.reply_photo(
+          photo=random.choice(AASF), caption="""*Hᴇʟʟᴏ {} !*
 ───────────────────
 × *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
 × *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
 ───────────────────
+× *Uᴘᴛɪᴍᴇ:* `{}`
+× `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
+───────────────────
 × *Pᴏᴡᴇʀᴇᴅ Bʏ: 𓆩᪵𝙃𝙖𝙣𝙜ꮻ𝙫𝙚𝙧𝙭𝘿─⃛͢❜🍷!*
+× `New Patch Comming Soon...`
 ───────────────────""".format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(
                  [
                    [InlineKeyboardButton(text="🏡", callback_data="wolf_start"),
@@ -842,10 +854,10 @@ Support
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/TamilChat_CRINGE_GUYS"),                           
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/Cringe_BoTZ")],
+                 [InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/HangOverXD"),                           
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/PlayBoysDXD")],
                     [InlineKeyboardButton(text="Mᴏᴠɪᴇs", url=f"https://t.me/+uzQ0M7QIQeQ2NWI9"),
-                     InlineKeyboardButton(text="Lᴏɢs", url=f"https://t.me/Cringe_Guys_logs")],
+                     InlineKeyboardButton(text="Lᴏɢs", url=f"https://t.me/HangOver_logs")],
                     [InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_")],
                  ]
             ),
@@ -1335,7 +1347,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage("@PlayBoysDX", "🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄ Started! Working Fine For Status, Click /start And /help For More Info[.](https://telegra.ph/file/a2a551f17067ec4b39685.jpg)", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.sendMessage("@PlayBoysDXD", "🦋⃟ƓƠƊ ƠƑ ωοℓƒ ✗ 𝄞✿‌᭄ Started! Working Fine For Status, Click /start And /help For More Info[.](https://telegra.ph/file/a2a551f17067ec4b39685.jpg)", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
