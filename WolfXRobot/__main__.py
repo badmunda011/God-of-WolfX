@@ -105,9 +105,6 @@ PM_START_TEXT = """
 × I'ᴍ ωοℓƒ ✗ Aɴɪᴍᴇ - Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ
 × I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!
 ───────────────────────
-**✯ Server Uptime : {}**
-**✯ {} users, across {} chats.**
-───────────────────────
 × Pᴏᴡᴇʀᴇᴅ Bʏ: 𓆩᪵𝙃𝙖𝙣𝙜ꮻ𝙫𝙚𝙧𝙭𝘿─⃛͢❜🍷!
 ───────────────────────
 """
@@ -326,9 +323,7 @@ def start(update: Update, context: CallbackContext):
                photo=random.choice(AASF),
                caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),                        
+                    escape_markdown(uptime),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -343,15 +338,10 @@ def start(update: Update, context: CallbackContext):
 × *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
 × *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
 ───────────────────
-× *Uᴘᴛɪᴍᴇ:* `{}`
-× `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
-───────────────────
-× *Pᴏᴡᴇʀᴇᴅ Bʏ: Pℓαყ Bσys ƊҲƊ!*
+× *Pᴏᴡᴇʀᴇᴅ Bʏ: 𓆩᪵𝙃𝙖𝙣𝙜ꮻ𝙫𝙚𝙧𝙭𝘿─⃛͢❜🍷!*
 ───────────────────""".format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(
                  [
                    [InlineKeyboardButton(text="🏡", callback_data="wolf_start"),
