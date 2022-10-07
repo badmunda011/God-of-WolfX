@@ -330,10 +330,10 @@ def start(update: Update, context: CallbackContext):
           )
 
 
-    else:
-          first_name = update.effective_user.first_name
-          update.effective_message.reply_photo(
-          photo=random.choice(AASF), caption="""*Hᴇʟʟᴏ {} !*
+       else:
+           first_name = update.effective_user.first_name
+           update.effective_message.reply_photo(
+            photo=random.choice(AASF), caption="""*Hᴇʟʟᴏ {} !*
 ───────────────────
 × *I'ᴍ Aɴɪᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ*
 × *I'ᴍ Vᴇʀʏ Fᴀꜱᴛ Aɴᴅ Mᴏʀᴇ Eꜰꜰɪᴄɪᴇɴᴛ I Pʀᴏᴠɪᴅᴇ Aᴡᴇꜱᴏᴍᴇ Fᴇᴀᴛᴜʀᴇꜱ!*
