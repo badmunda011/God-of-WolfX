@@ -215,7 +215,7 @@ TEXXT = """ *Hey* [{}](tg://settings/),
 
 
 SUPPORT_CHAT = "https://t.me/PlayBoysDXD"         
-UPDATE_CHANNEL = "https://t.me/Glaston_Knights_Union"
+UPDATE_CHANNEL = "https://t.me/simplysouth_links"
 DONATE_STRING = """иσ ι иєє∂ ι ¢αи ℓινє ωιтнσυт αиу ∂σиαтισи, ѕтιℓℓ ιи ∂σиαтισи נυѕт נσιи συя [¢нαт](t.me/playBoysDXD)"""
 
 
@@ -1041,13 +1041,13 @@ def wolf_about_callback(update: Update, context: CallbackContext):
                  ],
                  [  
                     InlineKeyboardButton(text="🫂 Sᴜᴘᴘᴏʀᴛ ", callback_data="wolf_support"),
-                    InlineKeyboardButton(text="👨‍✈️ Oᴡɴᴇʀ ", url="t.me/HMf_Owner_1"),
+                    InlineKeyboardButton(text="👨‍✈️ Oᴡɴᴇʀ ", url="t.me/BavaBee"),
                  ],
                  [
                      InlineKeyboardButton(text="Tᴇʀᴍs Aɴᴅ Cᴏɴᴅɪᴛɪᴏɴs ❗️", callback_data="wolf_term"),
                  ],
                  [
-                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="about_back"),
+                     InlineKeyboardButton(text="🔙 𝘽𝙖𝙘𝙠", callback_data="wolf_start"),
                  ]    
                ]
             ),
