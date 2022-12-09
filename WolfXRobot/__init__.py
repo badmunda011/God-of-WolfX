@@ -89,16 +89,16 @@ if ENV:
             "Your tiger users list does not contain valid BigInteger.")
 
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get('TEMP_DOWNLOAD_DIRECTORY', None)
-    INFOPIC = bool(os.environ.get('INFOPIC', True))
+    INFOPIC = bool(os.environ.get('INFOPIC', False))
     REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
-    EVENT_LOGS = os.environ.get('EVENT_LOGS', '-1001648239341')
+    EVENT_LOGS = os.environ.get('EVENT_LOGS', None)
     WEBHOOK = bool(os.environ.get('WEBHOOK', False))
     URL = os.environ.get('URL', "")  # Does not contain token
     PORT = int(os.environ.get('PORT', 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
-    API_ID = os.environ.get('API_ID', '8967766')
-    API_HASH = os.environ.get('API_HASH', '505dc1f394f59c8a55b1aa798a0715f9')
-    DATABASE_URL = os.environ.get('DATABASE_URL', 'postgres://ifdgcebj:NW_PMVUxlDscvmZO5yKu3kEQgI013JLg@castor.db.elephantsql.com/ifdgcebj')
+    API_ID = os.environ.get('API_ID', None)
+    API_HASH = os.environ.get('API_HASH', None)
+    DB_URI = os.environ.get('DATABASE_URL')
     DONATION_LINK = os.environ.get('DONATION_LINK')
     LOAD = os.environ.get("LOAD", "").split()
     STRING_SESSION = os.environ.get("STRING_SESSION", None)
@@ -114,11 +114,11 @@ if ENV:
     AI_API_KEY = os.environ.get('AI_API_KEY', None)
     WALL_API = os.environ.get('WALL_API', None)
     
-    TOKEN = os.environ.get('TOKEN', '2079359720:AAFO_39OA9oAuy5UoX67OXduzBBw1eyeOoE')
+    TOKEN = os.environ.get('TOKEN', None)
     SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get('SPAMWATCH_SUPPORT_CHAT', None)
     SPAMWATCH_API = os.environ.get('SPAMWATCH_API', None)
-    BOT_ID = "2079359720"
+    BOT_ID = "2052309535"
     ARQ_API = os.environ.get("ARQ_API", None)
     ARQ_API_URL = "https://grambuilders.tech"
     ARQ_API_KEY = ARQ_API
