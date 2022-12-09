@@ -121,7 +121,6 @@ if ENV:
     BOT_ID = "2052309535"
     ARQ_API = os.environ.get("ARQ_API", None)
     ARQ_API_URL = "https://grambuilders.tech"
-    ARQ_API = ARQ_API
 
 
 
