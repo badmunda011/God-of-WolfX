@@ -12,6 +12,7 @@ class Config(object):
   
     TEMP_DOWNLOAD_DIRECTORY = 'None'
     ARQ_API = 'BJWJFF-ABOVMF-IPHAEN-QHXPTJ-ARQ'
+    ARQ_API_URL = 'arq.hamker.in'
     API_ID = '8967766'
     API_HASH = '505dc1f394f59c8a55b1aa798a0715f9'
     TOKEN = '2079359720:AAFO_39OA9oAuy5UoX67OXduzBBw1eyeOoE'
