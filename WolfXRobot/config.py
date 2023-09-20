@@ -15,16 +15,16 @@ class Config(object):
     ARQ_API_URL = 'arq.hamker.in'
     API_ID = '8967766'
     API_HASH = '505dc1f394f59c8a55b1aa798a0715f9'
-    TOKEN = '2079359720:AAFO_39OA9oAuy5UoX67OXduzBBw1eyeOoE'
+    TOKEN = ''
     OWNER_ID = 960432019
     OWNER_USERNAME = "BavaBee"
     SUPPORT_CHAT = 'HangOverXD'
     JOIN_LOGGER = -1001648239341
     EVENT_LOGS = -1001648239341
-    REM_BG_API_KEY = "dxsh728mZMDmj4ijSZCNPZig"
-    STRING_SESSION = "1BVtsOH4Bu2v0wASaMCuV0PgHpopdRrfpm3-q4WHj02C_LbCv_I-5Yz9dCmEocnXAdv3cvJL9sas4ZCU_mmOD2xxzT4VETq5K--e1CNfypg-9IhWEB-wr581BVC73lQic7hKvbfWOwBDRH12fBSmf3shLEBYXiw2JJ6QWolRg1co-8VawR2gCk0gu1C6Q0NCyg0JN2pkV3Vmgi1fghIT3cjSQ9q85qdXEsAPAdILyQ9IexUsKwxvuykOOh7jwpAc_HPanZh8908bZi_sKh-sdh4ywaHMwfTahHQi5oF2EE6eBQ-QzjfG49kBMi4BJNoRGgZCGMt4lIYeMsa5gu5rX9QpcD3TLGV0="
+    REM_BG_API_KEY = ""
+    STRING_SESSION = ""
     ALLOW_CHATS = "True"
-    SQLALCHEMY_DATABASE_URI = 'postgres://ifdgcebj:NW_PMVUxlDscvmZO5yKu3kEQgI013JLg@castor.db.elephantsql.com/ifdgcebj'  
+    SQLALCHEMY_DATABASE_URI = ''  
     LOAD = []
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = None
