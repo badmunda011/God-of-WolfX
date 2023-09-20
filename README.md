@@ -4,7 +4,6 @@
 
 <h4><p align="center"> God OF Wolf robot </p></h4>
 
-<p align="center">Note: Use it for education purpose because this repo is Non-Maintenance. Wolf X Robot is a modular bot running on python3 with anime theme and have a lot features.</p>
 
 <p align="center">
 <a href="https://t.me/WolfXRobot"> <img src="https://img.shields.io/badge/Wolf-Robot-blue?style=for-the-badge&logo=telegram" alt="Siesta on Telegram" /> </a><br>
@@ -79,4 +78,4 @@ This Bot is Created by ShinobuProject, If your kanging this without fork at leas
 
 ## Credit 
 
-## • [Hacker](Https://GitHub.com/thiruselvan999)
+## • [Hacker](Https://GitHub.com/ThiruXD)
